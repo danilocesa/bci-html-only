@@ -20,82 +20,6 @@
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
         <script src="js/main.js"></script>
-
-		<style>
-		#img-container-aboutus {
-			width: 170%;
-			position: absolute;
-			left: -200px;
-			text-align: center;
-		}
-		#img-container-aboutus img{
-			width: 550px;
-			height: 550px;
-			position: absolute;
-			left: 23%;
-		}
-		#img-container-aboutus #left, #right {width: 45%;}
-		#img-container-aboutus #left {
-			float: left;
-		    text-align: right;
-			word-wrap: break-word;
-			margin-top: 140px;
-		}
-		#img-container-aboutus #right {
-			float: right;
-			text-align: left;
-			word-wrap: break-word;
-			margin-top: 140px;
-		}
-		#img-container-aboutus #left:before, #right:before {
-			content: "";
-			width: 100%;
-			height: 490px;
-		}
-		#img-container-aboutus #left:before {
-			float: right; 
-			shape-outside: ellipse(280px 280px at 110% 27%);
-			//shape-outside: ellipse(250px 275px at 155% 30%);
-			//shape-outside: circle(farthest-side at right);
-		}
-		#img-container-aboutus #right:before {
-			float: left; 
-			shape-outside: ellipse(280px 280px at -9% 27%);
-			//shape-outside: ellipse(255px 275px at -55% 30%);
-			//shape-outside: circle(farthest-side at left);
-		}
-		#img-container-aboutus h3{margin: 0; color: #009fde;}
-		#img-container-aboutus h3.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
-		#img-container-aboutus p{font-size: 0.8em; color: #808080;line-height: 1;} 
-		
-		#img-container-aboutus .profile-name {margin-bottom: 15px;width: 60%;}
-		#img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
-		#img-container-aboutus div#left  .profile-name {margin-left: 30px;}
-		#img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: 50px;}
-		#img-container-aboutus div#left  .profile-name:last-child {margin-left: 140px;}
-		#img-container-aboutus div#right .profile-name {margin-left: 155px;}
-		#img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 135px;}
-		#img-container-aboutus div#right .profile-name:last-child {margin-left: 50px;}
-		@-moz-document url-prefix(){
-			#img-container-aboutus #left:before, #right:before {
-				content: "";
-				width: 0;
-				height: 490px;
-			}
-			#img-container-aboutus div#left  .profile-name {margin-left: -50px;}
-			#img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: -30px;}
-			#img-container-aboutus div#left  .profile-name:last-child {margin-left: 30px;}
-			#img-container-aboutus div#right .profile-name {margin-left: 235px;}
-			#img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 210px;}
-			#img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
-		}
-		#img-container-aboutus #auLine {
-			background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='60' y1='50' x2='1000' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-			width: 400px;
-			height: 150px;
-			position: absolute;
-		}
-		</style>
     </head>
     <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -106,96 +30,94 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                  <aside>
-                    <img src="img/bci-logo.png" />
+                    <a href="http://localhost/bci/"><img src="img/bci-logo.png" /></a>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor."</p>
                 </aside>
 
                 <nav id="bci-menu" class="">
                     <div class="menu-circle"><a href="about-us.html">about us</a></div>
-                    <!--<div class="menu-circle"><a href="#">clients</a></div>
-                    <div class="menu-circle"><a href="#">portfolio</a></div>
-                    <div class="menu-circle"><a href="#">what's new</a></div>
-                    <div class="menu-circle"><a href="#">contact us</a></div>-->
                 </nav>
 				
 				<div class="main-content">
 					<div id="img-container-aboutus">
 						<div id="auLine"></div>
 						<img src="img/about-us.png" />
-						<div id="left">
-							<div class="profile-name">
-								<h3 class="ui header">
-								  gemma g. alcantara
-								  <div class="sub header">managing director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+						<div class="director-content">
+							<div id="left">
+								<div class="profile-name">
+									<h3 class="ui header">
+									  gemma g. alcantara
+									  <div class="sub header">managing director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  joey server
+									  <div class="sub header">chief creative director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  rey tolentino
+									  <div class="sub header">creative director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  lita marte
+									  <div class="sub header">finance director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<!--<div class="profile-name">
+									<h3 class="ui header">
+									  lorem ipsum
+									  <div class="sub header">managing director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>-->
 							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  joey server
-								  <div class="sub header">chief creative director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+							<div id="right">
+								<div class="profile-name">
+									<h3 class="ui header">
+									  tiger jimenez
+									  <div class="sub header">senior art director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  igine jose
+									  <div class="sub header">technical director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  paul salapantan
+									  <div class="sub header">strategic planning director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  vanessa julian
+									  <div class="sub header">account director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
+								<div class="profile-name">
+									<h3 class="ui header">
+									  jessica salas
+									  <div class="sub header">event director</div>
+									</h3>
+									<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+								</div>
 							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  rey tolentino
-								  <div class="sub header">creative director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  lita marte
-								  <div class="sub header">finance director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<!--<div class="profile-name">
-								<h3 class="ui header">
-								  lorem ipsum
-								  <div class="sub header">managing director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>-->
-						</div>
-						<div id="right">
-							<div class="profile-name">
-								<h3 class="ui header">
-								  tiger jimenez
-								  <div class="sub header">senior art director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  igine jose
-								  <div class="sub header">technical director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  paul salapantan
-								  <div class="sub header">strategic planning director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  vanessa julian
-								  <div class="sub header">account director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-							<div class="profile-name">
-								<h3 class="ui header">
-								  jessica salas
-								  <div class="sub header">event director</div>
-								</h3>
-								<p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
-							</div>
-						</div>
+						<div>
 					</div>
 				</div>
 				

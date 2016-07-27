@@ -143,6 +143,157 @@ body {
 
 
 /* ==========================================================================
+   About Us custom styles
+   ========================================================================== */
+
+#img-container-aboutus {
+    position: absolute;
+    left: -161px;
+}
+.director-content{
+    width:118%;
+}
+#img-container-aboutus img{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    left: 23%;
+}
+#img-container-aboutus #left, #right {width: 45%;}
+#img-container-aboutus #left {
+    float: left;
+    text-align: right;
+    word-wrap: break-word;
+    margin-top: 140px;
+}
+#img-container-aboutus #right {
+    float: right;
+    text-align: left;
+    word-wrap: break-word;
+    margin-top: 140px;
+}
+#img-container-aboutus #left:before, #right:before {
+    content: "";
+    width: 100%;
+    height: 490px;
+}
+#img-container-aboutus #left:before {
+    float: right; 
+    shape-outside: ellipse(280px 280px at 110% 27%);
+    //shape-outside: ellipse(250px 275px at 155% 30%);
+    //shape-outside: circle(farthest-side at right);
+}
+#img-container-aboutus #right:before {
+    float: left; 
+    shape-outside: ellipse(280px 280px at -9% 27%);
+    //shape-outside: ellipse(255px 275px at -55% 30%);
+    //shape-outside: circle(farthest-side at left);
+}
+#img-container-aboutus h3{margin: 0; color: #009fde;}
+#img-container-aboutus h3.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
+#img-container-aboutus p{font-size: 0.8em; color: #808080;line-height: 1;} 
+
+#img-container-aboutus .profile-name {margin-bottom: 15px;width: 60%;}
+#img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
+#img-container-aboutus div#left  .profile-name {margin-left: 30px;}
+#img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: 50px;}
+#img-container-aboutus div#left  .profile-name:last-child {margin-left: 140px;}
+#img-container-aboutus div#right .profile-name {margin-left: 155px;}
+#img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 135px;}
+#img-container-aboutus div#right .profile-name:last-child {margin-left: 50px;}
+@-moz-document url-prefix(){
+    #img-container-aboutus #left:before, #right:before {
+        content: "";
+        width: 0;
+        height: 490px;
+    }
+    #img-container-aboutus div#left  .profile-name {margin-left: -50px;}
+    #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: -30px;}
+    #img-container-aboutus div#left  .profile-name:last-child {margin-left: 30px;}
+    #img-container-aboutus div#right .profile-name {margin-left: 235px;}
+    #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 210px;}
+    #img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
+}
+#img-container-aboutus #auLine {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='60' y1='50' x2='1000' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+}
+
+
+/* ==========================================================================
+   Contact Us custom styles
+   ========================================================================== */
+
+#cu-content {
+    padding:10px;
+}
+
+#cu-bci-menu{
+    padding:10px;
+    z-index: 1;
+    bottom: 0;
+}
+
+.cu-menu-circle {
+    width: 100px;
+    height: 100px;
+    background: #00B8E8;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+/*    margin-top:30px;*/
+    padding: 38px 5px 0 5px;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+#cu-icons {
+    position:absolute;
+    bottom: 110px;
+}
+
+#cu-icons img{
+    width:100px;
+    height:100px;
+}
+
+.cu-menu-circle a, .cu-menu-circle a:visited{
+    color:#fff;
+}
+.cu-menu-circle a:hover{
+    color:#000;
+}
+
+.cu-line-separator {
+    height:55px;
+    width:1px;
+    background-color: #c8c8c8;   
+    margin-left:50px;
+}
+
+.cu-hor-line-separator {
+    height:1px;
+    width:55px;
+    background-color: #c8c8c8;   
+    margin-top: 55px; 
+}
+
+#cu-line-top {
+    display:none;
+}
+
+.cu-hor-menu {
+    display:inline-flex;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 100px;    
+}
+
+/* ==========================================================================
    Media Queries
    ========================================================================== */
 
@@ -186,6 +337,51 @@ body {
         top:25px;
         left:0;
     }
+     /* Contact Us */
+    #cu-content {
+        padding:0;
+    }
+
+    #cu-bci-menu {
+        padding-bottom:0;
+    }    
+
+    .cu-menu-circle{
+        font-size:1.1em;
+        margin:auto;
+    }    
+
+    .cu-hor-menu {
+        display: inline;
+        position: initial;
+        margin: auto;
+    }
+
+    #cu-line-top {
+        display:block;
+    }
+
+    #cu-hor-line-top {
+        display:none;
+    }
+
+    .cu-hor-line-separator {
+        height:55px;
+        width:1px;  
+        margin: 0 auto;
+    }  
+
+    #cu-icons {
+        position:initial;
+        text-align:center;
+    }  
+
+    .cu-line-separator {
+        height: 55px;
+        width: 1px;
+        background-color: #c8c8c8;
+        margin: 0 auto;
+    }    
 }    
 
 
@@ -239,6 +435,52 @@ body {
         top:25px;
         left:0;
     }
+
+    /* Contact Us */
+    #cu-content {
+        padding:0;
+    }
+
+    #cu-bci-menu {
+        padding-bottom:0px;
+    }    
+
+    .cu-menu-circle{
+        font-size:1.1em;
+        margin:auto;
+    }    
+
+    .cu-hor-menu {
+        display: inline;
+        position: initial;
+        margin: auto;
+    }
+
+    #cu-line-top {
+        display:block;
+    }
+
+    #cu-hor-line-top {
+        display:none;
+    }
+
+    .cu-hor-line-separator {
+        height:55px;
+        width:1px;  
+        margin: 0 auto;
+    }  
+
+    #cu-icons {
+        position:initial;
+        text-align:center;
+    }  
+
+    .cu-line-separator {
+        height: 55px;
+        width: 1px;
+        background-color: #c8c8c8;
+        margin: 0 auto;
+    }      
 
 
 /* ========================
@@ -305,6 +547,54 @@ body {
         display:none;
     }
 
+    /* Contact Us */
+    #cu-content {
+        padding:0;
+    }  
+
+    #cu-bci-menu {
+        width:120px;
+        margin: 0 auto;
+        padding-bottom:0px;
+    }      
+
+    .cu-menu-circle{
+        font-size:1.1em;
+        margin:auto;
+    }    
+
+    .cu-hor-menu {
+        display: inline;
+        position: initial;
+        margin: auto;
+    }
+
+    #cu-line-top {
+        display:block;
+    }
+
+    #cu-hor-line-top {
+        display:none;
+    }
+
+    .cu-hor-line-separator {
+        height:55px;
+        width:1px;  
+        margin: 0 auto;
+    }  
+
+    #cu-icons {
+        position:initial;
+        text-align:center;
+    }  
+
+    .cu-line-separator {
+        height: 55px;
+        width: 1px;
+        background-color: #c8c8c8;
+        margin: 0 auto;
+    }    
+
 
 }   
 
@@ -343,6 +633,10 @@ body {
     }
 
     #bci-menu{
+        position:absolute;
+        width:122px;
+    }
+     #cu-bci-menu{
         position:absolute;
         width:122px;
     }
