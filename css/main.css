@@ -233,7 +233,8 @@ body {
 #cu-bci-menu{
     padding:10px;
     z-index: 1;
-    bottom: 0;
+    bottom: 110px;
+    position:absolute;
 }
 
 .cu-menu-circle {
@@ -253,7 +254,7 @@ body {
 
 #cu-icons {
     position:absolute;
-    bottom: 110px;
+    bottom: 215px;
 }
 
 #cu-icons img{
@@ -289,7 +290,7 @@ body {
 .cu-hor-menu {
     display:inline-flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 125px;
     margin-left: 100px;    
 }
 
@@ -344,6 +345,8 @@ body {
 
     #cu-bci-menu {
         padding-bottom:0;
+        position: relative;
+        bottom: 0;
     }    
 
     .cu-menu-circle{
@@ -443,6 +446,8 @@ body {
 
     #cu-bci-menu {
         padding-bottom:0px;
+        position: relative;
+        bottom: 0;
     }    
 
     .cu-menu-circle{
@@ -556,6 +561,8 @@ body {
         width:120px;
         margin: 0 auto;
         padding-bottom:0px;
+        position: relative;
+        bottom: 0;
     }      
 
     .cu-menu-circle{
@@ -686,7 +693,7 @@ body {
     }
 
     #bci-fbpage {
-        top: 55%;
+        top: 47%;
         left: 74%;
         width: 185px;
     }
