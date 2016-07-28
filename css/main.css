@@ -214,7 +214,7 @@ body {
     #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 210px;}
     #img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
 }
-#img-container-aboutus #auLine {
+#auLine {
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='60' y1='50' x2='1000' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
     width: 400px;
     height: 150px;
@@ -396,7 +396,26 @@ body {
         padding: 38px 5px 0 5px;
         margin-left:85px;
     }  
-
+    #img-container-aboutus {
+        position:static;
+        left:0;
+    }
+    #img-container-aboutus img {
+        width: 280px;
+        height: 280px;
+        position:static;
+    }
+    #auLine {
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='145' y1='0' x2='145' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+        width: 280px;
+        height: 150px;
+        position: absolute;
+        top: -63px;
+        z-index: -1;
+    }
+    .director-content {
+        width:100%;
+    }
 }    
 
 
@@ -716,8 +735,8 @@ body {
     }
 
     #img-container-aboutus img {
-        width: 480px;
-       height: 480px;   
+        width: 400px;
+        height: 400px;   
     }
     #img-container-aboutus #left, #right{
         width:49%;
@@ -726,6 +745,17 @@ body {
         width: 112%;
         margin-top: -35px;
     }
+
+    #img-container-aboutus #left:before {
+        float: right;
+        shape-outside: ellipse(210px 210px at 108% 19%);
+    }
+
+    #img-container-aboutus #right:before {
+        float: left;
+        shape-outside: ellipse(210px 210px at 4% 19%);
+    }
+
 }
 
 @media only screen and (min-width: 1140px) {
