@@ -145,18 +145,14 @@ html *
 #img-container-aboutus #left:before {
     float: right; 
     shape-outside: ellipse(280px 280px at 110% 27%);
-    //shape-outside: ellipse(250px 275px at 155% 30%);
-    //shape-outside: circle(farthest-side at right);
 }
 #img-container-aboutus #right:before {
     float: left; 
     shape-outside: ellipse(280px 280px at -9% 27%);
-    //shape-outside: ellipse(255px 275px at -55% 30%);
-    //shape-outside: circle(farthest-side at left);
 }
 #img-container-aboutus h2{margin: 0; color: #009fde;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
-#img-container-aboutus p{font-size: 0.8em; color: #808080;line-height: 1;} 
+#img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;} 
 
 #img-container-aboutus .profile-name {margin-bottom: 15px;width: 60%;}
 #img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
@@ -358,7 +354,6 @@ html *
         width: 100px;
         height: 100px;
         border-radius: 50px;
-        margin-top: 30px;
         padding: 38px 5px 0 5px;
         margin-left:85px;
     }  
@@ -367,15 +362,13 @@ html *
         left:0;
     }
     #img-container-aboutus img {
-        width: 280px;
-        height: 280px;
+        width: 287px;
+        height: 287px;
         position:static;
     }
     #auLine {
         background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='145' y1='0' x2='145' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-        width: 280px;
-        height: 150px;
-        position: absolute;
+        width:100%;
         top: -63px;
         z-index: -1;
     }
@@ -435,7 +428,6 @@ html *
         font-size: 1em;
     }
 
-   
 }    
 
 
@@ -546,28 +538,74 @@ html *
         height: 80px;
         padding-top: 25px;
         position:relative;
-        left:37%;
-    }   
+        margin:0 auto;
+    }  
+    .director-content{
+        width:90%;
+    } 
     #img-container-aboutus {
         position: relative;
         left: 0;
-        margin-top:50px;
+        margin-top:20px;
     } 
     #img-container-aboutus img {
-        width: 330px;
-        height: 330px;
+        width: 100%;
+        height: 100%;
         position: relative;
         left: 0;
     }
+
     #auLine{
-        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='165' y1='0' x2='165' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-        width:280px;
-        height:100px;
-        position:absolute;
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='50%' y1='0' x2='50%' y2='100%' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+        width:100%;
         top:-90px;
         z-index:-1;
     }
 
+    #img-container-aboutus #left:before{
+        float:none;
+        shape-outside:none;
+    }
+
+    #img-container-aboutus #right:before{
+        float:none;
+        shape-outside:none;
+    }
+
+    #img-container-aboutus #left:before, #right:before{
+        float: none;
+        shape-outside:none;
+    }
+   
+    #img-container-aboutus #left{
+        margin-top:25px;
+        text-align:left;
+        float:none;
+    }
+
+    #img-container-aboutus #left, #right{
+        width:90%;
+    }
+    #img-container-aboutus .profile-name{
+        width:100%;
+    }
+
+    #img-container-aboutus div#left .profile-name:last-child {
+        margin-left:30px;
+    }
+    #img-container-aboutus #right {
+        float:none;
+        margin-top:15px;
+    }
+    #img-container-aboutus div#right .profile-name{
+        margin-left:30px;
+    }
+    #img-container-aboutus div#right .profile-name:nth-child(4) {
+        margin-left:30px;
+    }
+    #img-container-aboutus div#right .profile-name:last-child {
+        margin-left:30px;
+    }
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -590,14 +628,11 @@ html *
 
     #bci-menu{
         width:120px;
-
-
     }
-
     .menu-circle{
         width:80px;
         height:80px;
-        font-size:1.1em;
+        font-size:1.5em;
         padding:29px 0 5px 0;
     }
 
@@ -681,9 +716,62 @@ html *
         width: 1px;
         background-color: #c8c8c8;
         margin: 0 auto;
-    }    
+    }   
 
+    /** About Us **/ 
 
+    #about-menu{
+        font-size:1.5em;
+    }
+    #img-container-aboutus {
+        left:-36%;
+    }
+    #auLine{
+        width:100%;
+        z-index: -1;
+    }
+    #img-container-aboutus img {
+        width:80%;
+        height:37%;
+        left:35%;
+        position:relative;
+    }
+    .director-content{
+        width:100%;
+    }
+    #img-container-aboutus #left {
+        float:left;
+        text-align: left;
+        margin-top:50px;
+    }
+    #img-container-aboutus #left:before, #right:before {
+        content:none;
+
+    }
+    #img-container-aboutus #left, #right {
+        width:50%;
+    }
+    #img-container-aboutus div#left .profile-name {
+        margin-left:15px;
+    }
+    #img-container-aboutus .profile-name {
+        width:100%;
+    }
+    #img-container-aboutus div#left .profile-name:last-child {
+        margin-left: 15px;
+    }
+    #img-container-aboutus #right {
+        margin-top: 50px;
+    }
+    #img-container-aboutus div#right .profile-name {
+        margin-left: 40px;
+    }
+    #img-container-aboutus div#right .profile-name:nth-child(4) {
+        margin-left: 40px;
+    }
+    #img-container-aboutus div#right .profile-name:last-child {
+        margin-left: 40px;
+    }
 }   
 
 @media only screen and (min-width: 768px) and (max-width: 1139px) {
@@ -784,25 +872,51 @@ html *
     }
 
     #img-container-aboutus img {
-        width: 400px;
-        height: 400px;   
+        width: 75%;
+        height: 40%; 
+        position:relative;  
     }
     #img-container-aboutus #left, #right{
         width:49%;
     }
     .director-content {
         width: 112%;
-        margin-top: -35px;
+        left:10%;
+        position: relative;
     }
 
-    #img-container-aboutus #left:before {
-        float: right;
-        shape-outside: ellipse(210px 210px at 108% 19%);
+    #img-container-aboutus #left {
+        float:left;
+        text-align: left;
+        margin-top:50px;
     }
+    #img-container-aboutus #left:before, #right:before {
+        content:none;
 
-    #img-container-aboutus #right:before {
-        float: left;
-        shape-outside: ellipse(210px 210px at 4% 19%);
+    }
+    #img-container-aboutus #left, #right {
+        width:50%;
+    }
+    #img-container-aboutus div#left .profile-name {
+        margin-left:15px;
+    }
+    #img-container-aboutus .profile-name {
+        width:100%;
+    }
+    #img-container-aboutus div#left .profile-name:last-child {
+        margin-left: 15px;
+    }
+    #img-container-aboutus #right {
+        margin-top: 50px;
+    }
+    #img-container-aboutus div#right .profile-name {
+        margin-left: 40px;
+    }
+    #img-container-aboutus div#right .profile-name:nth-child(4) {
+        margin-left: 40px;
+    }
+    #img-container-aboutus div#right .profile-name:last-child {
+        margin-left: 40px;
     }
 
 }
