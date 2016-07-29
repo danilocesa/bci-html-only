@@ -62,6 +62,18 @@ html *
     color:#000;
 }
 
+
+.main-content{
+    position: relative;
+    width:60%;
+    left:15%;
+    top:40px;
+}
+
+/* ==========================================================================
+   Index Custom Styles
+   ========================================================================== */
+
 #art-hand{
     width: 423px;
     overflow:hidden;
@@ -89,20 +101,6 @@ html *
 
 #art-hand-responsive{
     display:none;
-}
-
-#bci-fbpage{
-    position:absolute;
-    top:25%;
-    left:69%;
-    width:230px;
-}
-
-.main-content{
-    position: relative;
-    width:60%;
-    left:15%;
-    top:40px;
 }
 
 
@@ -255,6 +253,45 @@ html *
     bottom: 125px;
     margin-left: 100px;    
 }
+
+/* ==========================================================================
+   Whats New Custom Styles
+   ========================================================================== */
+
+#bci-fbpage{
+    position:absolute;
+    top:25%;
+    left:69%;
+    width:230px;
+}
+#wn-line{
+    border:1px solid red;
+    position:relative;
+    left:-15%;
+    top:70px;
+    height:400px;
+}
+#blog-line{
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='90' y1='130' x2='0' y2='100%' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+    height:84%;
+    margin-top:45px;
+    position: absolute;
+}
+#latpro-line{
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='100%' x2='30' y2='290' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+    height:84%;
+    margin-top:45px;
+    position: absolute;
+    width:100%;
+}
+/*#auLine {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='145' y1='0' x2='145' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+    width:100%;
+    top: -63px;
+    z-index: -1;
+}*/
+
+
 
 /* ==========================================================================
    Media Queries
