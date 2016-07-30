@@ -19,8 +19,14 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
+        <script src="js/snap.svg-min.js"></script>
         <script src="js/main.js"></script>
-
+        <script>
+        window.onload = function() {
+            var aLine = Snap("#aLine").attr({ viewBox: "0 0 100% 100%" });
+            aLine.line(0, '15%', '100%', '53%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+        }
+        </script>
     </head>
     <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -43,8 +49,8 @@
                 <a href="whats-new.html"><div class="menu-circle">what's new</a></div></a>
                 <a href="contact-us.html"><div class="menu-circle">contact us</div></a>
             </nav>
-                <div id="line-art-connection" class="line-animate hidden">
-                    <div id="aLine" ></div>
+                <div id="line-art-connection" class="line-animate">
+                    <svg width="100%" height="100%" id="aLine" ></svg>
                     <div id="cLine"></div>
                     <div id="pLine"></div>
                     <div id="wLine"></div>

@@ -5,11 +5,11 @@ $(document).ready(function() {
 
 // });
 
-$('.line-animate')
-  .transition({
-    animation : 'fade',
-    interval  : 200,
-  })
-;
+// $('.line-animate')
+//   .transition({
+//     animation : 'fade',
+//     interval  : 200,
+//   })
+// ;
 
 });

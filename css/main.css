@@ -49,7 +49,7 @@ html *
     border-radius: 50px;
     margin-top:30px;
     padding: 38px 5px 0 5px;
-    font-size: 1.6em;
+    font-size: 2em;
     color: #fff;
     line-height: 1.2em;
     text-align: center;
@@ -101,6 +101,12 @@ html *
 
 #art-hand-responsive{
     display:none;
+}
+
+
+#aLine{
+    position:absolute;
+    left:-4%;
 }
 
 
@@ -593,7 +599,7 @@ html *
     }
 
     #auLine{
-        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='50%' y1='0' x2='50%' y2='100%' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+        /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='50%' y1='0' x2='50%' y2='100%' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;*/
         width:100%;
         top:-90px;
         z-index:-1;
@@ -693,7 +699,6 @@ html *
         margin-top:0;
         z-index:-1;
     }
-
     .main-content {
         position: absolute;
         width: 58%;
@@ -766,6 +771,7 @@ html *
     #auLine{
         width:100%;
         z-index: -1;
+
     }
     #img-container-aboutus img {
         width:80%;
@@ -863,7 +869,7 @@ html *
     }
     #art-hand{
         margin-left:150px;
-        width:497px;
+        width:490px;
         margin-top:55px;
     }
 
@@ -872,11 +878,13 @@ html *
     }
 
     #line-art-connection{
-        width:510px;
+        width:550px;
+
     }
 
-    #aLine {
-        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='100' x2='745' y2='400' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
+    #aLine {/*
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='100' x2='745' y2='400' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;*/
+        width:95%;
     }
     #cLine {
       background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='220' x2='330' y2='150' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
@@ -983,6 +991,7 @@ html *
         margin-left: 230px;
         margin-top:0;
         width:615px;
+        position:absolute;
     }
 
     #art-hand img{
@@ -997,9 +1006,10 @@ html *
     #line-art-connection{
         width:694px;
     }
-    #aLine {
+   /* #aLine {
       background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='100' x2='745' y2='340' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-    }
+     
+    }*/
     #cLine {
       background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='220' x2='470' y2='120' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
     }
