@@ -19,13 +19,24 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
-        <script src="js/snap.svg-min.js"></script>
+        <script src="js/vendor/snap.svg-min.js"></script>
         <script src="js/main.js"></script>
         <script>
-        window.onload = function() {
-            var aLine = Snap("#aLine").attr({ viewBox: "0 0 100% 100%" });
-            aLine.line(0, '15%', '100%', '53%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-        }
+            window.onload = function(){
+                /* ==========================================================================
+                  Index SVG Lines
+                   ========================================================================== */    
+                var aLine = Snap("#aLine");
+                aLine.line(0, '15%', '100%', '53%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cLine = Snap("#cLine");
+                cLine.line(0, '35%', '68%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var pLine = Snap("#pLine");
+                pLine.line(0, '55%', '55%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var wLine = Snap("#wLine");
+                wLine.line(0, '75%', '33%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cuLine = Snap("#cuLine");
+                cuLine.line(0, '90%', '28%', '55%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            }
         </script>
     </head>
     <body>
@@ -35,7 +46,7 @@
     <![endif]-->
     <div class="main-container">
         <div class="main wrapper clearfix">
-             <aside>
+            <aside>
                 <a href="index.html"><img src="img/bci-logo.png" /></a>
                 <p>30th floor, tycoon bldg. pearl drive avenue ortigas center pasig city <br />
                     tel# 6389478
@@ -44,27 +55,22 @@
 
             <nav id="bci-menu">
                 <a href="about-us.html"><div class="menu-circle">about us</div></a>
-                <a href="#"><div class="menu-circle">clients</div></a>
+                <a href="clients.html"><div class="menu-circle">clients</div></a>
                 <a href="#"><div class="menu-circle">portfolio</div></a>
                 <a href="whats-new.html"><div class="menu-circle">what's new</a></div></a>
                 <a href="contact-us.html"><div class="menu-circle">contact us</div></a>
             </nav>
                 <div id="line-art-connection" class="line-animate">
-                    <svg width="100%" height="100%" id="aLine" ></svg>
-                    <div id="cLine"></div>
-                    <div id="pLine"></div>
-                    <div id="wLine"></div>
-                    <div id="cuLine"></div>
+                    <svg width="100%" height="100%" id="aLine"></svg>
+                    <svg width="100%" height="100%" id="cLine"></svg>
+                    <svg width="100%" height="100%" id="pLine"></svg>
+                    <svg width="100%" height="100%" id="wLine"></svg>
+                    <svg width="100%" height="100%" id="cuLine"></svg>
                 </div>
                 <div id="art-hand">
                     <img src="img/art-hand.png" />
                 </div>
         </div> <!-- #main -->
     </div> <!-- #main-container -->
-    <div class="footer-container">
-        <footer class="wrapper">
-            <h3>footer</h3>
-        </footer>
-    </div>
     </body>
 </html>
