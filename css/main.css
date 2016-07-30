@@ -25,6 +25,7 @@ html * { font-family: woodcut !important; }
     left:15%;
     top:40px;
 }
+.resp-divider{display: none;}
 
 /* ==========================================================================
    Index Custom Styles
@@ -212,6 +213,7 @@ html * { font-family: woodcut !important; }
     position:relative;
     left:-15%;
     top:70px;
+    /*height:100%;*/
     height:400px;
 }
 .wn-circle{
@@ -233,6 +235,7 @@ html * { font-family: woodcut !important; }
 #blog-line{
     z-index: -1;
     position: relative;
+    /*top:198px;*/
 }
 
 #wn-latestProj{
@@ -247,6 +250,7 @@ html * { font-family: woodcut !important; }
     position: relative;
     width:100%;
     z-index: -1;
+    top: -100%;
 }
 #wn-others{
     width:130px;
@@ -257,358 +261,328 @@ html * { font-family: woodcut !important; }
     padding:46px 5px;
     z-index: 1;
 }
+#others-line{
+    position:relative;
+    top:-200%;
+    z-index: -1;
+}
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
+
+/* ==========================================================================
+   Media stage 1
+========================================================================== */
 @media only screen and (max-width: 320px){
-    .main aside img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #bci-menu{
-        width: 100%;
-    }
+.main aside img{display:block;margin-left:auto;margin-right:auto}
+.resp-divider{ top:39%!important; z-index: -1!important;display:block;}
+#bci-menu{width: 100%;}
+.menu-circle{width:100%;margin-top:6px;padding:5px;height:100%}
+.menu-circle.invisible{height:0;padding-top:0;}
+.menu-circle.invisible#about-menu{height:0;padding-top:0;}
+.main-content{width:100%;top:25px;left:0}
+/* ==========================================================================
+    Index
+========================================================================== */
+#line-art-connection{display:none}
+#art-hand{height:100%;width:100%}
+#art-hand img{height:300px;width:100%}
+#bci-fbpage{display:none}
+/* ==========================================================================
+    Contact Us
+========================================================================== */
+#cu-content{padding:0}
+#cu-bci-menu{padding-bottom:0;position:relative;bottom:0}
+.cu-menu-circle{font-size:1.1em;margin:auto}
+.cu-hor-menu{display:inline;position:initial;margin:auto}
+#cu-line-top{display:block}
+#cu-hor-line-top{display:none}
+.cu-hor-line-separator{height:55px;width:1px;margin:0 auto}
+#cu-icons{position:initial;text-align:center}
+.cu-line-separator{height:55px;width:1px;background-color:#c8c8c8;margin:0 auto}
+/* ==========================================================================
+    About Us
+========================================================================== */
+#about-menu{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 38px 5px 0 5px;
+    margin-left:85px;
+}  
+#img-container-aboutus {
+    position:static;
+    left:0;
+}
+#img-container-aboutus img {
+    width: 287px;
+    height: 287px;
+    position:static;
+}
+#auLine {
+    width:100%;
+    top: -63px;
+    z-index: -1;
+}
+.director-content {
+    width:100%;
+}
 
-    .menu-circle{
-        width:100%;
-        margin-top:6px;
-        padding:5px;
-        height:100%;
-    }
+#img-container-aboutus #left, #right {
+    width: 100%; 
+}
 
-    #line-art-connection{
-        display:none;
-    }
+#img-container-aboutus #left:before{
+    float: none;
+    shape-outside: none;
+}
 
-    #art-hand{
-        height:100%;
-        width:100%;
-    }
+#img-container-aboutus #right:before {
+    float: none;
+    shape-outside: none;
+}
 
-    #art-hand img{
-        height:300px;
-        width:100%;
-    }
+#img-container-aboutus #left{
+    float: none; 
+    text-align:left;
+    margin-top: 13px; 
+}
 
-    #bci-fbpage{
-        display:none;
-    }
+ #img-container-aboutus #right{
+    float: none; 
+    text-align:left;
+    margin-top: 13px; 
+}
 
-    .main-content{
-        width:100%;
-        top:25px;
-        left:0;
-    }
-     /* Contact Us */
-    #cu-content {
-        padding:0;
-    }
+#img-container-aboutus #left:before, #right:before {
+    content: none;
+    width: 0;
+    height: 0;
+}
 
-    #cu-bci-menu {
-        padding-bottom:0;
-        position: relative;
-        bottom: 0;
-    }    
-
-    .cu-menu-circle{
-        font-size:1.1em;
-        margin:auto;
-    }    
-
-    .cu-hor-menu {
-        display: inline;
-        position: initial;
-        margin: auto;
-    }
-
-    #cu-line-top {
-        display:block;
-    }
-
-    #cu-hor-line-top {
-        display:none;
-    }
-
-    .cu-hor-line-separator {
-        height:55px;
-        width:1px;  
-        margin: 0 auto;
-    }  
-
-    #cu-icons {
-        position:initial;
-        text-align:center;
-    }  
-
-    .cu-line-separator {
-        height: 55px;
-        width: 1px;
-        background-color: #c8c8c8;
-        margin: 0 auto;
-    }  
-
-    /** About Us **/
-    
-    #about-menu{
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        padding: 38px 5px 0 5px;
-        margin-left:85px;
-    }  
-    #img-container-aboutus {
-        position:static;
-        left:0;
-    }
-    #img-container-aboutus img {
-        width: 287px;
-        height: 287px;
-        position:static;
-    }
-    #auLine {
-        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='145' y1='0' x2='145' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-        width:100%;
-        top: -63px;
-        z-index: -1;
-    }
-    .director-content {
-        width:100%;
-    }
-
-    #img-container-aboutus #left, #right {
-        width: 100%; 
-    }
-
-    #img-container-aboutus #left:before{
-        float: none;
-        shape-outside: none;
-    }
-
-    #img-container-aboutus #right:before {
-        float: none;
-        shape-outside: none;
-    }
-
-    #img-container-aboutus #left{
-        float: none; 
-        text-align:left;
-        margin-top: 13px; 
-    }
-
-     #img-container-aboutus #right{
-        float: none; 
-        text-align:left;
-        margin-top: 13px; 
-    }
-
-    #img-container-aboutus #left:before, #right:before {
-        content: none;
-        width: 0;
-        height: 0;
-    }
-
-    #img-container-aboutus .profile-name {
-    /*margin-bottom: 15px;*/
-     width: 90%; 
-    }
-    #img-container-aboutus div#left .profile-name:last-child {
-        margin-left: 30px;
-    }
-    #img-container-aboutus div#right .profile-name {
-        margin-left: 30px;
-    }
-    #img-container-aboutus div#right .profile-name:nth-child(4) {
-        margin-left: 30px;
-    }
-    #img-container-aboutus div#right .profile-name:last-child {
-        margin-left: 30px;
-    }
-    #img-container-aboutus p {
-        font-size: 1em;
-    }
-
+#img-container-aboutus .profile-name {
+ width: 90%; 
+}
+#img-container-aboutus div#left .profile-name:last-child {
+    margin-left: 30px;
+}
+#img-container-aboutus div#right .profile-name {
+    margin-left: 30px;
+}
+#img-container-aboutus div#right .profile-name:nth-child(4) {
+    margin-left: 30px;
+}
+#img-container-aboutus div#right .profile-name:last-child {
+    margin-left: 30px;
+}
+#img-container-aboutus p {
+    font-size: 1em;
+}
+/* ==========================================================================
+    Whats New
+========================================================================== */
+#whats-new-menu{width: 100px;height: 100px;padding-top: 35px;position:relative;margin:0 auto;}  
+#wn-container{height:100%;}
+#wn-line{ display:none; }
+.wn-circle{position:static;margin:auto;margin-top:20px;}
 }    
 
 
-/*@media only screen and (max-width:)*/
+/* ==========================================================================
+   Media stage 2
+   ========================================================================== */
+
 @media only screen and (min-width: 321px) and (max-width: 479px) {
 
-    .main aside img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.main aside img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.resp-divider{ top:39%!important; z-index: -1!important;display:block;}
+#bci-menu{
+    /*position:relative;*/
+    padding:0;
+    width:100%;
+}
 
-    #bci-menu{
-        /*position:relative;*/
-        padding:0;
-        width:100%;
-    }
+.menu-circle.invisible{
+    height:0;
+    padding-top:0;
+}
+.menu-circle.invisible#about-menu{
+    height:0;
+    padding-top:0;
+}
+.menu-circle{
+    width:100%;
+    margin-top:6px;
+    padding:5px;
+    height:100%;
+}
+#art-hand{
+    width:100%;
+    height:100%;
+}
 
-    .menu-circle{
-        width:100%;
-        margin-top:6px;
-        padding:5px;
-        height:100%;
-    }
+#art-hand img{
+    width:100%;
+}
 
+#line-art-connection{
+    display:none;
+    /*border: 1px solid red;*/
+}
 
-   /* .menu-circle:last-child,
-    .menu-circle:nth-child(4){
-        padding: 18px 5px 0 5px;
-        margin-left:50px;
-    }*/
+#bci-fbpage{
+    display:none;
+}
 
-    #art-hand{
-        width:100%;
-        height:100%;
-    }
+.main-content{
+    width:100%;
+    top:25px;
+    left:0;
+}
 
-    #art-hand img{
-        width:100%;
-    }
+/* Contact Us */
+#cu-content {
+    padding:0;
+}
 
-    #line-art-connection{
-        display:none;
-        /*border: 1px solid red;*/
-    }
+#cu-bci-menu {
+    padding-bottom:0px;
+    position: relative;
+    bottom: 0;
+}    
 
-    #bci-fbpage{
-        display:none;
-    }
+.cu-menu-circle{
+    font-size:1.1em;
+    margin:auto;
+}    
 
-    .main-content{
-        width:100%;
-        top:25px;
-        left:0;
-    }
+.cu-hor-menu {
+    display: inline;
+    position: initial;
+    margin: auto;
+}
 
-    /* Contact Us */
-    #cu-content {
-        padding:0;
-    }
+#cu-line-top {
+    display:block;
+}
 
-    #cu-bci-menu {
-        padding-bottom:0px;
-        position: relative;
-        bottom: 0;
-    }    
+#cu-hor-line-top {
+    display:none;
+}
 
-    .cu-menu-circle{
-        font-size:1.1em;
-        margin:auto;
-    }    
+.cu-hor-line-separator {
+    height:55px;
+    width:1px;  
+    margin: 0 auto;
+}  
 
-    .cu-hor-menu {
-        display: inline;
-        position: initial;
-        margin: auto;
-    }
+#cu-icons {
+    position:initial;
+    text-align:center;
+}  
 
-    #cu-line-top {
-        display:block;
-    }
+.cu-line-separator {
+    height: 55px;
+    width: 1px;
+    background-color: #c8c8c8;
+    margin: 0 auto;
+}  
 
-    #cu-hor-line-top {
-        display:none;
-    }
+/** About Us **/
+#about-menu{
+    width: 80px;
+    height: 80px;
+    padding-top: 25px;
+    position:relative;
+    margin:0 auto;
+}  
+.director-content{
+    width:90%;
+} 
+#img-container-aboutus {
+    position: relative;
+    left: 0;
+    margin-top:20px;
+} 
+#img-container-aboutus img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
 
-    .cu-hor-line-separator {
-        height:55px;
-        width:1px;  
-        margin: 0 auto;
-    }  
+#auLine{
+    width:100%;
+    top:-90px;
+    z-index:-1;
+}
 
-    #cu-icons {
-        position:initial;
-        text-align:center;
-    }  
+#img-container-aboutus #left:before{
+    float:none;
+    shape-outside:none;
+}
 
-    .cu-line-separator {
-        height: 55px;
-        width: 1px;
-        background-color: #c8c8c8;
-        margin: 0 auto;
-    }  
+#img-container-aboutus #right:before{
+    float:none;
+    shape-outside:none;
+}
 
-    /** About Us **/
-    #about-menu{
-        width: 80px;
-        height: 80px;
-        padding-top: 25px;
-        position:relative;
-        margin:0 auto;
-    }  
-    .director-content{
-        width:90%;
-    } 
-    #img-container-aboutus {
-        position: relative;
-        left: 0;
-        margin-top:20px;
-    } 
-    #img-container-aboutus img {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        left: 0;
-    }
+#img-container-aboutus #left:before, #right:before{
+    float: none;
+    shape-outside:none;
+}
 
-    #auLine{
-        /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='50%' y1='0' x2='50%' y2='100%' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;*/
-        width:100%;
-        top:-90px;
-        z-index:-1;
-    }
+#img-container-aboutus #left{
+    margin-top:25px;
+    text-align:left;
+    float:none;
+}
 
-    #img-container-aboutus #left:before{
-        float:none;
-        shape-outside:none;
-    }
+#img-container-aboutus #left, #right{
+    width:90%;
+}
+#img-container-aboutus .profile-name{
+    width:100%;
+}
 
-    #img-container-aboutus #right:before{
-        float:none;
-        shape-outside:none;
-    }
+#img-container-aboutus div#left .profile-name:last-child {
+    margin-left:30px;
+}
+#img-container-aboutus #right {
+    float:none;
+    margin-top:15px;
+}
+#img-container-aboutus div#right .profile-name{
+    margin-left:30px;
+}
+#img-container-aboutus div#right .profile-name:nth-child(4) {
+    margin-left:30px;
+}
+#img-container-aboutus div#right .profile-name:last-child {
+    margin-left:30px;
+}
 
-    #img-container-aboutus #left:before, #right:before{
-        float: none;
-        shape-outside:none;
-    }
-   
-    #img-container-aboutus #left{
-        margin-top:25px;
-        text-align:left;
-        float:none;
-    }
+/* ==========================================================================
+   Whats New
+   ========================================================================== */
 
-    #img-container-aboutus #left, #right{
-        width:90%;
-    }
-    #img-container-aboutus .profile-name{
-        width:100%;
-    }
-
-    #img-container-aboutus div#left .profile-name:last-child {
-        margin-left:30px;
-    }
-    #img-container-aboutus #right {
-        float:none;
-        margin-top:15px;
-    }
-    #img-container-aboutus div#right .profile-name{
-        margin-left:30px;
-    }
-    #img-container-aboutus div#right .profile-name:nth-child(4) {
-        margin-left:30px;
-    }
-    #img-container-aboutus div#right .profile-name:last-child {
-        margin-left:30px;
-    }
+#whats-new-menu{
+    width: 100px;
+    height: 100px;
+    padding-top: 35px;
+    position:relative;
+    margin:0 auto;
+}  
+#wn-container{height:100%;}
+#wn-line{ display:none; }
+.wn-circle{position:static;margin:auto;margin-top:20px;}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -619,6 +593,9 @@ html * { font-family: woodcut !important; }
     }
 }
 
+/* ==========================================================================
+   Media stage 3
+   ========================================================================== */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .main aside{
     width:100%;
@@ -737,8 +714,21 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus div#right .profile-name { margin-left: 40px; }
 #img-container-aboutus div#right .profile-name:nth-child(4) { margin-left: 40px; }
 #img-container-aboutus div#right .profile-name:last-child { margin-left: 40px; }
+
+/* ==========================================================================
+   Whats New
+   ========================================================================== */
+
+#wn-container{
+    position:absolute;
+    top:-65px;
+}
+#wn-line{ left:-19%; width:130%; }
 }   
 
+/* ==========================================================================
+   Media stage 4
+   ========================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1139px) {
 .title {float: left;}
 nav {float: right;width: 38%;}
@@ -758,7 +748,7 @@ nav {float: right;width: 38%;}
 #bci-fbpage{top:47%;left:74%;width:185px}
 /* ==========================================================================
    About Us
-   ========================================================================== */
+========================================================================== */
 #img-container-aboutus { left: -33%; }
 #img-container-aboutus img{width:75%;height:40%;position:relative}
 #img-container-aboutus #left,#right{width:49%}
@@ -775,6 +765,9 @@ nav {float: right;width: 38%;}
 #img-container-aboutus div#right .profile-name:last-child { margin-left: 40px; }
 }
 
+/* ==========================================================================
+   Media stage 5
+   ========================================================================== */
 @media only screen and (min-width: 1140px) {
 .main aside { float: right;width: 28%; }
 .wrapper { width: 1026px; margin: 0 auto; }
