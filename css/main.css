@@ -1,15 +1,12 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 fieldset,hr{border:0;padding:0}html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border-top:1px solid #ccc;margin:1em 0}audio,canvas,iframe,img,svg,video{vertical-align:middle}fieldset{margin:0}textarea{resize:vertical}.browserupgrade{margin:.2em 0;background:red;color:#fff;padding:1em 0;text-align:center;font-size:1.5em}
-
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
+========================================================================== */
 body{font:16px/26px Helvetica,Helvetica Neue,Arial}.wrapper{width:90%;margin:0 5%}.title{color:#fff}.main{padding:30px 0}.main aside{color:grey;padding:0 5% 10px}.footer-container footer{color:#fff;padding:20px 0}.ie7 .title{padding-top:20px}
-
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+========================================================================== */
 @font-face { font-family: woodcut; src: url(../font/Woodcut.ttf); }
 html * { font-family: woodcut !important; }
 .footer-container{ display:none; }
@@ -19,84 +16,34 @@ html * { font-family: woodcut !important; }
 .menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;;font-size:1.7em;color:#fff;line-height:1.2em;text-align:center;line-height:4em;}
 .menu-circle a, .menu-circle a:visited{ color:#fff; }
 .menu-circle a:hover{ color:#000; }
-.main-content{
-    position: relative;
-    width:60%;
-    left:15%;
-    top:40px;
-}
+.main-content{position: relative;width:60%;left:15%;top:40px;}
 .resp-divider{display: none;}
-
 /* ==========================================================================
-   Index Custom Styles
-   ========================================================================== */
+   Index
+========================================================================== */
 #art-hand{ width: 423px; overflow:hidden; }
 #art-hand img{ width:610px; position:relative; }
-#line-art-connection{
-    position: absolute;
-    margin-left: 106px;
-    margin-top: 5px;
-    width: 746px;
-    height: 640px;
-    overflow:hidden;
-}
-#line-art-connection div{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-}
+#line-art-connection{position: absolute;margin-left: 106px;margin-top: 5px;width: 746px;height: 640px;overflow:hidden;}
+#line-art-connection div{ position:absolute;  width:100%;  height:100%}
 #aLine{ position:absolute; left:-4%; }
 #pLine{ position:absolute; top:0; left:0;}
 #wLine{ position:absolute; top:0; }
 #cuLine{ position:absolute; top:0; }
 /* ==========================================================================
-   About Us custom styles
-   ========================================================================== */
-
-#img-container-aboutus {
-    position: absolute;
-    left: -28%;
-}
-.director-content{
-    width:118%;
-    font-size:1.1em;
-}
-#img-container-aboutus img{
-    width: 550px;
-    height: 550px;
-    position: absolute;
-    left: 23%;
-}
-#img-container-aboutus #left, #right {width: 45%;}
-#img-container-aboutus #left {
-    float: left;
-    text-align: right;
-    word-wrap: break-word;
-    margin-top: 140px;
-}
-#img-container-aboutus #right {
-    float: right;
-    text-align: left;
-    word-wrap: break-word;
-    margin-top: 140px;
-}
-#img-container-aboutus #left:before, #right:before {
-    content: "";
-    width: 100%;
-    height: 490px;
-}
-#img-container-aboutus #left:before {
-    float: right; 
-    shape-outside: ellipse(280px 280px at 110% 27%);
-}
-#img-container-aboutus #right:before {
-    float: left; 
-    shape-outside: ellipse(280px 280px at -9% 27%);
-}
+   About Us
+========================================================================== */
+#img-container-aboutus{ position:absolute;  left:-28%}
+.director-content{ width:118%;  font-size:1.1em}
+#img-container-aboutus img{ width:550px;  height:550px;  position:absolute;  left:23%}
+#img-container-aboutus #left, #right{width:45%}
+#img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:140px}
+#img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:140px}
+#img-container-aboutus #left:before, #right:before{ content:"";  width:100%;  height:490px}
+#img-container-aboutus #left:before{ float:right;  shape-outside:ellipse(280px 280px at 110% 27%)}
+#img-container-aboutus #right:before{ float:left;  shape-outside:ellipse(280px 280px at -9% 27%)}
 #img-container-aboutus h2{margin: 0; color: #009fde;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
 #img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;} 
-
 #img-container-aboutus .profile-name {margin-bottom: 15px;width: 60%;}
 #img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
 #img-container-aboutus div#left  .profile-name {margin-left: 30px;}
@@ -120,158 +67,41 @@ html * { font-family: woodcut !important; }
 }
 
 #auLine {
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='60' y1='50' x2='1000' y2='300' stroke='#B9B9B9' stroke-width='2' /></svg>") no-repeat;
-    width: 400px;
-    height: 150px;
+    z-index: -1;
     position: absolute;
 }
 
 
 /* ==========================================================================
-   Contact Us custom styles
-   ========================================================================== */
-
-#cu-content {
-    padding:10px;
-}
-
-#cu-bci-menu{
-    padding:10px;
-    z-index: 1;
-    bottom: 110px;
-    position:absolute;
-}
-
-.cu-menu-circle {
-    width: 100px;
-    height: 100px;
-    background: #00B8E8;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-/*    margin-top:30px;*/
-    padding: 38px 5px 0 5px;
-    font-size: 1.3em;
-    color: #fff;
-    line-height: 1.2em;
-    text-align: center;
-}
-
-#cu-icons {
-    position:absolute;
-    bottom: 215px;
-}
-
-#cu-icons img{
-    width:100px;
-    height:100px;
-}
-
-.cu-menu-circle a, .cu-menu-circle a:visited{
-    color:#fff;
-}
-.cu-menu-circle a:hover{
-    color:#000;
-}
-
-.cu-line-separator {
-    height:55px;
-    width:1px;
-    background-color: #c8c8c8;   
-    margin-left:50px;
-}
-
-.cu-hor-line-separator {
-    height:1px;
-    width:55px;
-    background-color: #c8c8c8;   
-    margin-top: 55px; 
-}
-
-#cu-line-top {
-    display:none;
-}
-
-.cu-hor-menu {
-    display:inline-flex;
-    position: absolute;
-    bottom: 125px;
-    margin-left: 100px;    
-}
-
+   Contact Us
+========================================================================== */
+#cu-content{ padding:10px}
+#cu-bci-menu{ padding:10px;  z-index:1;  bottom:110px;  position:absolute}
+.cu-menu-circle{ width:100px;  height:100px;  background:#00B8E8;  -moz-border-radius:50px;  -webkit-border-radius:50px;  border-radius:50px;  padding:38px 5px 0 5px;  font-size:1.3em;  color:#fff;  line-height:1.2em;  text-align:center}
+#cu-icons{ position:absolute;  bottom:215px}
+#cu-icons img{ width:100px;  height:100px}
+.cu-menu-circle a, .cu-menu-circle a:visited{ color:#fff}
+.cu-menu-circle a:hover{ color:#000}
+.cu-line-separator{ height:55px;  width:1px;  background-color:#c8c8c8;   margin-left:50px}
+.cu-hor-line-separator{ height:1px;  width:55px;  background-color:#c8c8c8;   margin-top:55px}
+#cu-line-top{ display:none}
+.cu-hor-menu{ display:inline-flex;  position:absolute;  bottom:125px;  margin-left:100px}
 /* ==========================================================================
-   Whats New Custom Styles
-   ========================================================================== */
-
-#bci-fbpage{
-    position:absolute;
-    top:25%;
-    left:69%;
-    width:230px;
-}
-#wn-line{
-    position:relative;
-    left:-15%;
-    top:86px;
-    height:352px;
-    overflow: hidden;
-    z-index: -1;
-}
-.wn-circle{
-    -moz-border-radius:100px;
-    -webkit-border-radius:100px;
-    border-radius:100px;
-    font-size:2.5em;color:#fff;line-height:1.2em;text-align:center;
-    position:absolute;
-}
-
-#wn-blogs{
-    width:155px;
-    height:155px;
-    top:38%;
-    left:-5%;
-    background:#31B3CB;
-    line-height: 4.5em;
-}
-#blog-line{
-    z-index: -1;
-    position: relative;
-    /*top:198px;*/
-}
-
-#wn-latestProj{
-    width:205px;
-    height:205px;
-    top:25%;
-    left:45%;
-    background:#0086A7;
-    line-height: 6em;
-}
-#latpro-line{
-    position: relative;
-    width:100%;
-    z-index: -1;
-    top: -100%;
-}
-#wn-others{
-    width:130px;
-    height:130px;
-    top:82%;
-    left:28%;
-    background:#3CDDFA;
-    z-index: 1;
-    line-height: 3.7em;
-}
-#others-line{
-    position:relative;
-    top:-200%;
-    z-index: -1;
-}
-
+   Whats New
+========================================================================== */
+#bci-fbpage{ position:absolute;  top:25%;  left:69%;  width:230px}
+#wn-line{ position:relative;  left:-15%;  top:86px;  height:352px;  overflow:hidden;  z-index:-1}
+.wn-circle{ -moz-border-radius:100px;  -webkit-border-radius:100px;  border-radius:100px;  font-size:2.5em; color:#fff; line-height:1.2em; text-align:center;  position:absolute}
+#wn-blogs{ width:155px;  height:155px;  top:38%;  left:-5%;  background:#31B3CB;  line-height:4.5em}
+#blog-line{ z-index:-1;  position:relative}
+#wn-latestProj{ width:205px;  height:205px;  top:25%;  left:45%;  background:#0086A7;  line-height:6em}
+#latpro-line{ position:relative;  width:100%;  z-index:-1;  top:-100%}
+#wn-others{ width:130px;  height:130px;  top:82%;  left:28%;  background:#3CDDFA;  z-index:1;  line-height:3.7em}
+#others-line{ position:relative;  top:-200%;  z-index:-1}
 
 /* ==========================================================================
    Media Queries
-   ========================================================================== */
+========================================================================== */
 
 
 /* ==========================================================================
@@ -281,7 +111,7 @@ html * { font-family: woodcut !important; }
 .main aside img{display:block;margin-left:auto;margin-right:auto}
 .resp-divider{ top:39%!important; z-index: -1!important;display:block;}
 #bci-menu{width: 100%;}
-.menu-circle{width:100%;margin-top:6px;height:45px;line-height: 4em;}
+.menu-circle{width:100%;margin-top:6px;height:45px;line-height: 2em;}
 .menu-circle.invisible{height:0;padding-top:0;}
 .menu-circle.invisible#about-menu{height:0;padding-top:0;}
 .main-content{width:100%;top:25px;left:0}
@@ -307,116 +137,35 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     About Us
 ========================================================================== */
-#about-menu{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    padding: 38px 5px 0 5px;
-    margin-left:85px;
-}  
-#img-container-aboutus {
-    position:static;
-    left:0;
-}
-#img-container-aboutus img {
-    width: 287px;
-    height: 287px;
-    position:static;
-}
-#auLine {
-    width:100%;
-    top: -63px;
-    z-index: -1;
-}
-.director-content {
-    width:100%;
-}
-
-#img-container-aboutus #left, #right {
-    width: 100%; 
-}
-
-#img-container-aboutus #left:before{
-    float: none;
-    shape-outside: none;
-}
-
-#img-container-aboutus #right:before {
-    float: none;
-    shape-outside: none;
-}
-
-#img-container-aboutus #left{
-    float: none; 
-    text-align:left;
-    margin-top: 13px; 
-}
-
- #img-container-aboutus #right{
-    float: none; 
-    text-align:left;
-    margin-top: 13px; 
-}
-
-#img-container-aboutus #left:before, #right:before {
-    content: none;
-    width: 0;
-    height: 0;
-}
-
-#img-container-aboutus .profile-name {
- width: 90%; 
-}
-#img-container-aboutus div#left .profile-name:last-child {
-    margin-left: 30px;
-}
-#img-container-aboutus div#right .profile-name {
-    margin-left: 30px;
-}
-#img-container-aboutus div#right .profile-name:nth-child(4) {
-    margin-left: 30px;
-}
-#img-container-aboutus div#right .profile-name:last-child {
-    margin-left: 30px;
-}
-#img-container-aboutus p {
-    font-size: 1em;
-}
+#about-menu{ width:100px;  height:100px;  border-radius:50px; margin:0 auto;line-height: 4em;}
+#img-container-aboutus{ position:static;  left:0}
+#img-container-aboutus img{ width:287px;  height:287px;  position:static}
+#auLine{ width:100%;  top:-63px;  z-index:-1}
+.director-content{ width:100%}
+#img-container-aboutus #left, #right{ width:100%}
+#img-container-aboutus #left:before{ float:none;  shape-outside:none}
+#img-container-aboutus #right:before{ float:none;  shape-outside:none}
+#img-container-aboutus #left{ float:none;  text-align:left;  margin-top:13px}
+#img-container-aboutus #right{ float:none;  text-align:left;  margin-top:13px}
+#img-container-aboutus #left:before, #right:before{ content:none;  width:0;  height:0}
+#img-container-aboutus .profile-name{ width:90%}
+#img-container-aboutus div#left .profile-name:last-child{ margin-left:30px}
+#img-container-aboutus div#right .profile-name{ margin-left:30px}
+#img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:30px}
+#img-container-aboutus div#right .profile-name:last-child{ margin-left:30px}
+#img-container-aboutus p{ font-size:1em}
+#auLine{display: none;}
+#about-menu:after{ content:"";  display:block;  width:0px;  height:65px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:5px auto;  padding:0px;  z-index:-1}
 /* ==========================================================================
     Whats New
 ========================================================================== */
-#whats-new-menu{width: 100px;height: 100px;position:relative;margin:0 auto;}
-#whats-new-menu:after{ 
-    content: "";
-    display: block;
-    width: 0px;
-    height: 65px;
-    border: 0;
-    border-left: 2px solid rgb(185,185,185);
-    margin:5px auto;
-    padding: 0px;
-    z-index: -1;
-}  
-#wn-container{height:100%;}
-#wn-line{ display:none; }
-.wn-circle{position:static;margin:auto;margin-top:20px;}
-
-#wn-blogs:after , #wn-latestProj:after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 30px;
-    border: 0;
-    border-left: 2px solid rgb(185,185,185);
-    margin:-4px auto;
-    padding: 0px;
-    z-index: -1;
-}    
-
-
+#whats-new-menu{width:100px; height:100px; position:relative; margin:0 auto; line-height:4em}
+#whats-new-menu:after{ content:"";  display:block;  width:0px;  height:65px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:5px auto;  padding:0px;  z-index:-1}
+#wn-container{height:100%}
+#wn-line{display:none}
+.wn-circle{position:static; margin:auto; margin-top:20px}
+#wn-blogs:after, #wn-latestProj:after{ content:"";  display:block;  width:0px;  height:30px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:-4px auto;  padding:0px;  z-index:-1}
 }
-
-
 
 /* ==========================================================================
    Media stage 2
@@ -431,7 +180,6 @@ html * { font-family: woodcut !important; }
 }
 .resp-divider{ top:39%!important; z-index: -1!important;display:block;}
 #bci-menu{
-    /*position:relative;*/
     padding:0;
     width:100%;
 }
@@ -451,6 +199,14 @@ html * { font-family: woodcut !important; }
     font-size:2em;
     line-height: 1.8em;
 }
+.main-content{
+    width:100%;
+    top:25px;
+    left:0;
+}
+/* ==========================================================================
+    Index
+========================================================================== */
 #art-hand{
     width:100%;
     height:100%;
@@ -469,11 +225,6 @@ html * { font-family: woodcut !important; }
     display:none;
 }
 
-.main-content{
-    width:100%;
-    top:25px;
-    left:0;
-}
 
 /* Contact Us */
 #cu-content{ padding:0}
@@ -484,11 +235,7 @@ html * { font-family: woodcut !important; }
 #cu-hor-line-top{ display:none}
 .cu-hor-line-separator{ height:55px;  width:1px;   margin:0 auto}
 #cu-icons{ position:initial;  text-align:center}
- .cu-line-separator{ height:55px;  width:1px;  background-color:#c8c8c8;  margin:0 auto}
- 
-
-/** About Us **/
-
+.cu-line-separator{ height:55px;  width:1px;  background-color:#c8c8c8;  margin:0 auto}
 
 /* ==========================================================================
    Whats New
