@@ -16,7 +16,7 @@ html * { font-family: woodcut !important; }
 .main aside p{ font-size:1.1em; text-align: center; margin-top:10px; line-height: 1em; }
 .main aside img{ height:100px; }
 #bci-menu{ padding:10px; z-index: 1; }
-.menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;padding:35px 5px 0;font-size:1.7em;color:#fff;line-height:1.2em;text-align:center}
+.menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;;font-size:1.7em;color:#fff;line-height:1.2em;text-align:center;line-height:4em;}
 .menu-circle a, .menu-circle a:visited{ color:#fff; }
 .menu-circle a:hover{ color:#000; }
 .main-content{
@@ -212,9 +212,10 @@ html * { font-family: woodcut !important; }
 #wn-line{
     position:relative;
     left:-15%;
-    top:70px;
+    top:86px;
     /*height:100%;*/
-    height:400px;
+    height:352px;
+    overflow: hidden;
 }
 .wn-circle{
     -moz-border-radius:100px;
@@ -230,7 +231,7 @@ html * { font-family: woodcut !important; }
     top:38%;
     left:-5%;
     background:#31B3CB;
-    padding:55px 5px 0;
+    line-height: 4.5em;
 }
 #blog-line{
     z-index: -1;
@@ -244,7 +245,7 @@ html * { font-family: woodcut !important; }
     top:25%;
     left:45%;
     background:#0086A7;
-    padding:82px 5px;
+    line-height: 6em;
 }
 #latpro-line{
     position: relative;
@@ -258,8 +259,8 @@ html * { font-family: woodcut !important; }
     top:82%;
     left:28%;
     background:#3CDDFA;
-    padding:46px 5px;
     z-index: 1;
+    line-height: 3.7em;
 }
 #others-line{
     position:relative;
@@ -280,7 +281,7 @@ html * { font-family: woodcut !important; }
 .main aside img{display:block;margin-left:auto;margin-right:auto}
 .resp-divider{ top:39%!important; z-index: -1!important;display:block;}
 #bci-menu{width: 100%;}
-.menu-circle{width:100%;margin-top:6px;padding:5px;height:100%}
+.menu-circle{width:100%;margin-top:6px;height:45px;line-height: 1.8em;}
 .menu-circle.invisible{height:0;padding-top:0;}
 .menu-circle.invisible#about-menu{height:0;padding-top:0;}
 .main-content{width:100%;top:25px;left:0}
@@ -384,10 +385,35 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Whats New
 ========================================================================== */
-#whats-new-menu{width: 100px;height: 100px;padding-top: 35px;position:relative;margin:0 auto;}  
+#whats-new-menu{width: 100px;height: 100px;position:relative;margin:0 auto;}
+#whats-new-menu:after{ 
+    content: "";
+    display: block;
+    width: 0px;
+    height: 65px;
+    border: 0;
+    border-left: 2px solid rgb(185,185,185);
+    margin:5px auto;
+    padding: 0px;
+    z-index: -1;
+}  
 #wn-container{height:100%;}
 #wn-line{ display:none; }
 .wn-circle{position:static;margin:auto;margin-top:20px;}
+.wn-circle:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 30px;
+    border: 0;
+    border-left: 2px solid rgb(185,185,185);
+    margin:-4px auto;
+    padding: 0px;
+    z-index: -1;
+}
+.wn-circle:last-child:after {
+    display:none;
+}
 }    
 
 
@@ -420,8 +446,9 @@ html * { font-family: woodcut !important; }
 .menu-circle{
     width:100%;
     margin-top:6px;
-    padding:5px;
     height:100%;
+    font-size:2em;
+    line-height: 1.8em;
 }
 #art-hand{
     width:100%;
@@ -576,13 +603,38 @@ html * { font-family: woodcut !important; }
 #whats-new-menu{
     width: 100px;
     height: 100px;
-    padding-top: 35px;
     position:relative;
     margin:0 auto;
+    line-height: 4.4em;
 }  
+#whats-new-menu:after{ 
+    content: "";
+    display: block;
+    width: 0px;
+    height: 60px;
+    border: 0;
+    border-left: 2px solid rgb(185,185,185);
+    margin:-4px auto;
+    padding: 0px;
+    z-index: -1;
+}
 #wn-container{height:100%;}
 #wn-line{ display:none; }
 .wn-circle{position:static;margin:auto;margin-top:20px;}
+.wn-circle:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 30px;
+    border: 0;
+    border-left: 2px solid rgb(185,185,185);
+    margin:-4px auto;
+    padding: 0px;
+    z-index: -1;
+}
+.wn-circle:last-child:after {
+    display:none;
+}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -613,7 +665,6 @@ html * { font-family: woodcut !important; }
     width:80px;
     height:80px;
     font-size:1.5em;
-    padding:29px 0 5px 0;
 }
 
 #art-hand{
