@@ -53,11 +53,7 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 135px;}
 #img-container-aboutus div#right .profile-name:last-child {margin-left: 50px;}
 @-moz-document url-prefix(){
-    #img-container-aboutus #left:before, #right:before {
-        content: "";
-        width: 0;
-        height: 490px;
-    }
+    #img-container-aboutus #left:before,#right:before{content:"";width:0;height:490px}
     #img-container-aboutus div#left  .profile-name {margin-left: -50px;}
     #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: -30px;}
     #img-container-aboutus div#left  .profile-name:last-child {margin-left: 30px;}
@@ -66,28 +62,42 @@ html * { font-family: woodcut !important; }
     #img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
 }
 
-#auLine {
-    z-index: -1;
-    position: absolute;
-    width:40%;
-    height:25%;
-}
-
+#auLine{z-index:-1;position:absolute;width:40%;height:25%}
 
 /* ==========================================================================
    Contact Us
 ========================================================================== */
-#cu-content{ padding:10px}
-#cu-bci-menu{ padding:10px;  z-index:1;  bottom:110px;  position:absolute}
-.cu-menu-circle{ width:100px;  height:100px;  background:#00B8E8;  -moz-border-radius:50px;  -webkit-border-radius:50px;  border-radius:50px;  padding:38px 5px 0 5px;  font-size:1.3em;  color:#fff;  line-height:1.2em;  text-align:center}
-#cu-icons{ position:absolute;  bottom:215px}
-#cu-icons img{ width:100px;  height:100px}
-.cu-menu-circle a, .cu-menu-circle a:visited{ color:#fff}
-.cu-menu-circle a:hover{ color:#000}
-.cu-line-separator{ height:55px;  width:1px;  background-color:#c8c8c8;   margin-left:50px}
-.cu-hor-line-separator{ height:1px;  width:55px;  background-color:#c8c8c8;   margin-top:55px}
-#cu-line-top{ display:none}
-.cu-hor-menu{ display:inline-flex;  position:absolute;  bottom:125px;  margin-left:100px}
+#cu-circle{display:inline;float:left;min-height:580px;margin-left:-10%}
+#cu-circle-linkein{float:left;margin:50px 50px 0 0}
+#cu-circle-fb{float:left}
+#cu-circle-career{float:left;width:100px;height:100px;background:#0f87c5;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;font-size:2em;color:#fff;line-height:1.2em;text-align:center;margin:170px 0 0 30px}
+#cu-circle p{position:relative;top:50%;transform:translateY(-50%)}
+#cu-circle-inquiry{float:left;width:180px;height:180px;background:#0f87c5;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:100px;font-size:4.5em;color:#fff;line-height:1.2em;text-align:center;margin:80px 0 0 330px}
+#cu-lines{margin-left:-20%}
+#cu-linkedin-line {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='120' y1='208' x2='30' y2='560' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 100%;
+    height: 560px;
+    position: absolute;
+}
+#cu-fb-line {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='310' y1='216' x2='30' y2='560' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 100%;
+    height: 560px;
+    position: absolute;
+}
+#cu-career-line {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='560' y1='250' x2='30' y2='560' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 100%;
+    height: 560px;
+    position: absolute;  
+}
+#cu-inquiry-line {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='400' y1='480' x2='30' y2='560' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 100%;
+    height: 560px;
+    position: absolute;    
+}
 /* ==========================================================================
    Whats New
 ========================================================================== */
@@ -102,9 +112,67 @@ html * { font-family: woodcut !important; }
 #others-line{ position:relative;  top:-200%;  z-index:-1}
 
 /* ==========================================================================
+   Portfolio
+========================================================================== */
+#port-circles{min-height:560px}
+.port-menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;padding:38px 5px 0;font-size:1.3em;color:#fff;line-height:1.2em;text-align:center}
+.port-menu-circle a,.port-menu-circle a:visited{color:#fff}
+.port-menu-circle a:hover{color:#000}
+#port-events{position:relative;width:170px;height:170px;background:url(../img/portfolio/events.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:105px;border-bottom:5px solid #d1d1d1;border-right:5px solid #d1d1d1;color:#fff;position:relative;text-align:center;display:inline;float:left;margin:10% 20% 0 0}
+#port-events p{color:#fff;font-size:3.2em;position:absolute;bottom:3px;left:0;right:0}
+#port-print{position:relative;width:220px;height:220px;background:url(../img/portfolio/print.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:110px;border-bottom:5px solid #d1d1d1;border-right:5px solid #d1d1d1;color:#fff;position:relative;display:inline;float:left}
+#port-print p{color:#fff;font-size:5em;position:absolute;left:10px;right:0;top:23%}
+#port-digital{position:relative;width:145px;height:145px;background:url(../img/portfolio/digital.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:80px;border-bottom:5px solid #d1d1d1;border-right:5px solid #d1d1d1;color:#fff;position:relative;text-align:center;display:inline;float:left;margin:-10px 0 0 180px}
+#port-digital p{color:#fff;font-size:2.6em;position:absolute;bottom:0;left:0;right:0}
+#port-tv{position:relative;width:300px;height:300px;background:url(../img/portfolio/tv.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:150px;border-bottom:5px solid #d1d1d1;border-right:5px solid #d1d1d1;color:#fff;position:relative;text-align:center;display:inline;float:left;margin:-70px 0 0}
+#port-tv p{color:#fff;font-size:15em;position:absolute;left:0;right:0}
+#port-activations{position:relative;width:200px;height:200px;background:url(../img/portfolio/activations.png);background-size:cover;background-repeat:no-repeat;background-position:center center;border-radius:100px;border-bottom:5px solid #d1d1d1;border-right:5px solid #d1d1d1;color:#fff;position:relative;text-align:center;display:inline;float:left;margin:20px 7% 0 8%}
+#port-activations p{color:#fff;font-size:3.5em;position:absolute;bottom:15%;left:0;right:0}
+#port-lines{width:115%;margin-left:-15%}
+#eventLine {
+    /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250px' height='100%'><line x1='0' y1='300' x2='360' y2='0' stroke='#c8c8c8' stroke-width='1' /></svg>") no-repeat;*/
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='300' x2='360' y2='0' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+}
+#printLine {
+    /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='315' x2='480' y2='165' stroke='#c8c8c8' stroke-width='1' /></svg>") no-repeat;*/
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='300' x2='450' y2='150' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+#digitalLine {
+    /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300px' height='100%'><line x1='0' y1='330' x2='600' y2='280' stroke='#c8c8c8' stroke-width='1' /></svg>") no-repeat;*/
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='300' x2='600' y2='280' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 50%;
+    height: 100%;
+    position: absolute;  
+}
+#tvLine {
+    /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='345' x2='720' y2='440' stroke='#c8c8c8' stroke-width='1' /></svg>") no-repeat;*/
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='300' x2='720' y2='470' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+}
+#actLine {
+    /*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250px' height='100%'><line x1='0' y1='360' x2='840' y2='840' stroke='#c8c8c8' stroke-width='1' /></svg>") no-repeat;*/
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='300' x2='840' y2='840' stroke='#B9B9B9' stroke-width='1.3' /></svg>") no-repeat;
+    width: 250px;
+    height: 100%;
+    position: absolute;     
+}
+
+
+
+
+
+
+/* ==========================================================================
    Media Queries
 ========================================================================== */
-
 
 /* ==========================================================================
    Media stage 1
@@ -174,59 +242,19 @@ html * { font-family: woodcut !important; }
    ========================================================================== */
 
 @media only screen and (min-width: 321px) and (max-width: 479px) {
-
-.main aside img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+.main aside img{display:block;margin-left:auto;margin-right:auto}
 .resp-divider{ top:39%!important; z-index: -1!important;display:block;}
-#bci-menu{
-    padding:0;
-    width:100%;
-}
-
-.menu-circle.invisible{
-    height:0;
-    padding-top:0;
-}
-.menu-circle.invisible#about-menu{
-    height:0;
-    padding-top:0;
-}
-.menu-circle{
-    width:100%;
-    margin-top:6px;
-    height:100%;
-    font-size:2em;
-    line-height: 1.8em;
-}
-.main-content{
-    width:100%;
-    top:25px;
-    left:0;
-}
+#bci-menu{padding:0;width:100%}
+.menu-circle.invisible,.menu-circle.invisible#about-menu{height:0;padding-top:0}
+.menu-circle{width:100%;margin-top:6px;height:100%;font-size:2em;line-height:1.8em}
+.main-content{width:100%;top:25px;left:0}
 /* ==========================================================================
     Index
 ========================================================================== */
-#art-hand{
-    width:100%;
-    height:100%;
-}
-
-#art-hand img{
-    width:100%;
-}
-
-#line-art-connection{
-    display:none;
-    /*border: 1px solid red;*/
-}
-
-#bci-fbpage{
-    display:none;
-}
-
+#art-hand{width:100%;height:100%}
+#art-hand img{width:100%}
+#line-art-connection{display:none}
+#bci-fbpage{display:none}
 
 /* Contact Us */
 #cu-content{ padding:0}
@@ -241,40 +269,14 @@ html * { font-family: woodcut !important; }
 
 /* ==========================================================================
    Whats New
-   ========================================================================== */
+========================================================================== */
 
-#whats-new-menu{
-    width: 100px;
-    height: 100px;
-    position:relative;
-    margin:0 auto;
-    line-height: 3.7em;
-}  
-#whats-new-menu:after{ 
-    content: "";
-    display: block;
-    width: 0px;
-    height: 60px;
-    border: 0;
-    border-left: 2px solid rgb(185,185,185);
-    margin:-4px auto;
-    padding: 0px;
-    z-index: -1;
-}
+#whats-new-menu{width:100px;height:100px;position:relative;margin:0 auto;line-height:3.7em}
+#whats-new-menu:after{content:"";display:block;width:0;height:60px;border:0;border-left:2px solid #b9b9b9;margin:-4px auto;padding:0;z-index:-1}
 #wn-container{height:100%;}
 #wn-line{ display:none; }
 .wn-circle{position:static;margin:auto;margin-top:20px;}
-#wn-blogs:after , #wn-latestProj:after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 30px;
-    border: 0;
-    border-left: 2px solid rgb(185,185,185);
-    margin:-4px auto;
-    padding: 0px;
-    z-index: -1;
-}
+#wn-blogs:after,#wn-latestProj:after{content:"";display:block;width:0;height:30px;border:0;border-left:2px solid #b9b9b9;margin:-4px auto;padding:0;z-index:-1}
 
 
 /* ==========================================================================
@@ -299,7 +301,6 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus p{ font-size:1em}
 #auLine{display: none;}
 #about-menu:after{ content:"";  display:block;  width:0px;  height:65px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:-14px auto;  padding:0px;  z-index:-1}
-
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -311,106 +312,32 @@ html * { font-family: woodcut !important; }
 
 /* ==========================================================================
    Media stage 3
-   ========================================================================== */
+========================================================================== */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.main aside{
-    width:100%;
-}
-.main aside img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+.main aside{width:100%}
+.main aside img{display:block;margin-left:auto;margin-right:auto}
+#bci-menu{width:120px}
+.menu-circle{width:80px;height:80px;font-size:1.5em}
+.main-content{position:absolute;width:58%;left:28%;top:215px}
+/* ==========================================================================
+    Index
+========================================================================== */
+#art-hand{width:65%;position:absolute;top:225px;left:30%}
+#art-hand img{width:100%}
+#line-art-connection{display:none;width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
 
-#bci-menu{
-    width:120px;
-}
-.menu-circle{
-    width:80px;
-    height:80px;
-    font-size:1.5em;
-}
 
-#art-hand{
-    width: 65%;
-    position: absolute;
-    top: 225px;
-    left: 30%;
-}
-
-#art-hand img{
-    width:100%;
-}
-
-#line-art-connection{
-    display:none;
-    width: 77%;
-    height: 520px;
-    top: 225px;
-    margin-left:83px;
-    margin-top:0;
-    z-index:-1;
-}
-.main-content {
-    position: absolute;
-    width: 58%;
-    left: 28%;
-    top: 215px;
-}
-
- #bci-fbpage{
-    display:none;
-}
 
 /* Contact Us */
-#cu-content {
-    padding:0;
-}  
-
-#cu-bci-menu {
-    width:120px;
-    margin: 0 auto;
-    padding-bottom:0px;
-    position: relative;
-    bottom: 0;
-}      
-
-.cu-menu-circle{
-    font-size:1.1em;
-    margin:auto;
-}    
-
-.cu-hor-menu {
-    display: inline;
-    position: initial;
-    margin: auto;
-}
-
-#cu-line-top {
-    display:block;
-}
-
-#cu-hor-line-top {
-    display:none;
-}
-
-.cu-hor-line-separator {
-    height:55px;
-    width:1px;  
-    margin: 0 auto;
-}  
-
-#cu-icons {
-    position:initial;
-    text-align:center;
-}  
-
-.cu-line-separator {
-    height: 55px;
-    width: 1px;
-    background-color: #c8c8c8;
-    margin: 0 auto;
-}   
+#cu-content{padding:0}
+#cu-bci-menu{width:120px;margin:0 auto;padding-bottom:0;position:relative;bottom:0}
+.cu-menu-circle{font-size:1.1em;margin:auto}
+.cu-hor-menu{display:inline;position:initial;margin:auto}
+#cu-line-top{display:block}
+#cu-hor-line-top{display:none}
+.cu-hor-line-separator{height:55px;width:1px;margin:0 auto}
+#cu-icons{position:initial;text-align:center}
+.cu-line-separator{height:55px;width:1px;background-color:#c8c8c8;margin:0 auto}
 /* ==========================================================================
    About Us
    ========================================================================== */
@@ -432,12 +359,9 @@ html * { font-family: woodcut !important; }
 
 /* ==========================================================================
    Whats New
-   ========================================================================== */
-
-#wn-container{
-    position:absolute;
-    top:-65px;
-}
+========================================================================== */
+#bci-fbpage{display:none}
+#wn-container{position:absolute;top:-65px}
 #wn-line{ left:-19%; width:130%; }
 }   
 
