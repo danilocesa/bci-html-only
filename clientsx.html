@@ -1,0 +1,363 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BCI. eNav</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/semantic.min.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/vendor/semantic.min.js"></script>
+		<script src="js/vendor/snap.svg-min.js"></script>
+        <script src="js/main.js"></script>
+		<style>
+		#clients-container{
+			position: absolute;
+			width: 160%;
+			left: -27%;
+		}
+		.clients-img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			z-index: 10;
+		}
+		#clients-container #clients-panasonic{
+			position: absolute;
+			width: 18%;
+			left: 22%;
+			top: 0px;
+		}
+		#clients-container #clients-forex{
+			position: absolute;
+			width: 8.5%;
+			left: 15%;
+			top: 135px;
+		}
+		#clients-container #clients-dbp{
+			position: absolute;
+			width: 9%;
+			left: 18%;
+			top: 235px;
+		}
+		#clients-container #clients-scentshop{
+			position: absolute;
+			width: 14%;
+			left: 7%;
+			top: 310px;
+		}
+		#clients-container #clients-ritemed{
+			position: absolute;
+			width: 14%;
+			left: 0%;
+			top: 450px;
+		}
+		#clients-container #clients-bpi{
+			position: absolute;
+			width: 8.5%;
+			left: 15%;
+			top: 460px;
+		}
+		#clients-container #clients-blue{
+			position: absolute;
+			width: 26%;
+			left: 27%;
+			top: 335px;
+		}
+		#clients-container #clients-accenture{
+			position: absolute;
+			width: 14%;
+			left: 30%;
+			top: 190px;
+		}
+		#clients-container #clients-metrobank{
+			position: absolute;
+			width: 9.5%;
+			right: 38%;
+			top: 495px;
+		}
+		#clients-container #clients-microsoft{
+			position: absolute;
+			width: 18%;
+			right: 40%;
+			top: 80px;
+		}
+		#clients-container #clients-ucpb{
+			position: absolute;
+			width: 8.5%;
+			right: 30%;
+			top: 75px;
+		}
+		#clients-container #clients-mitsubishi{
+			position: absolute;
+			width: 42%;
+			right: 2%;
+			top: 145px;
+		}
+		#panasonicLine{position: absolute;left:-70%;z-index:-1;}
+		#microsoftLine{position: absolute;left:-180%;width:185%;z-index:-1;}
+		#dbpLine{position: absolute;left:-105%;top:-25px;width:115%;z-index:-1;}
+		#mitsubishiLine{position: absolute;left:-110%;top:50px;width:115%;z-index:-1;}
+		#blueLine{position: absolute;left:-75%;top:-150px;z-index:-1;}
+		#bpiLine{position: absolute;left:-105%;top:-235px;width:300%;height:300%;z-index:-1;}
+		.resp-divider{ display: none;}
+		#clients-menu:after, #clients-menu:after {display: none;}
+		.clients-doubleLine {display:none;}
+		
+		@media only screen and (max-width: 320px){
+			.menu-circle.invisible{height:0;padding-top:0;}
+			
+			.clients-doubleLine {display:none;}
+			
+			#clients-menu{
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				padding: 38px 5px 0 5px;
+				margin:0 auto;
+			} 
+			.clients-img-container {
+				width: 50% !important;
+				height: 50% !important;
+				left: 0 !important;
+				position: relative !important;
+				top: 0 !important;
+				float: left;
+				padding: 0px 10px;
+			}
+			.clients-line {
+				display: none;
+			}
+			#clients-container {
+				width: 100%;
+				left: 0;
+			}
+			.clients-img-container:after {
+				content: "";
+				display: block;
+				width: 0px;
+				height: 15px;
+				border: 0;
+				border-left: 2px solid rgb(185,185,185);
+				margin: 0 auto;
+				padding: 0px;
+			}
+			.clients-img-container:last-child:after {
+				display:none;
+			}
+			#clients-ucpb:after {
+				display:none;
+			}
+			#clients-menu:before {
+				content: "";
+				display: block;
+				width: 105px;
+				border-bottom: 2px solid rgb(185,185,185);
+				-webkit-transform:
+					translateY(98px)
+					translateX(-45px)
+					rotate(135deg); 
+				position: absolute;
+			}
+			#clients-menu:after {
+				content: "";
+				display: block;
+				width: 105px;
+				border-bottom: 2px solid rgb(185,185,185);
+				-webkit-transform:
+					translateY(65px)
+					translateX(30px)
+					rotate(45deg); 
+				position: absolute;
+			}
+		}
+		@media only screen and (min-width: 321px) and (max-width: 479px) {
+			.menu-circle.invisible{height:0;padding-top:0;}
+			.resp-divider{ top:39%!important; z-index: -1!important;display:block;}
+			
+			.clients-doubleLine {display:block;z-index: -1;}
+			#leftLine{position: absolute;left:0%;top:-8%;}
+			#rightLine{position: absolute;left: 42%;top:-8%;}
+			
+			#clients-menu{
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				padding: 38px 5px 0 5px;
+				margin:0 auto;
+			} 
+			.clients-img-container {
+				width: 50% !important;
+				height: 50% !important;
+				left: 0 !important;
+				position: relative !important;
+				top: 0 !important;
+				float: left;
+				padding: 0px 10px;
+			}
+			.clients-line {
+				display: none;
+			}
+			#clients-container {
+				width: 100%;
+				left: 0;
+			}
+			.clients-img-container:after {
+				content: "";
+				display: block;
+				width: 0px;
+				height: 15px;
+				border: 0;
+				border-left: 2px solid rgb(185,185,185);
+				margin: 0 auto;
+				padding: 0px;
+			}
+			.clients-img-container:last-child:after {
+				display:none;
+			}
+			#clients-ucpb:after {
+				display:none;
+			}
+			/*#clients-menu:before {
+				content: "";
+				display: block;
+				width: 125px;
+				border-bottom: 2px solid rgb(185,185,185);
+				-webkit-transform:
+					translateY(92px)
+					translateX(-75px)
+					rotate(150deg); 
+				position: absolute;
+			}
+			#clients-menu:after {
+				content: "";
+				display: block;
+				width: 125px;
+				border-bottom: 2px solid rgb(185,185,185);
+				-webkit-transform:
+					translateY(58px)
+					translateX(40px)
+					rotate(30deg); 
+				position: absolute;
+			}*/
+		}
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			
+			//.resp-divider{ top:39%!important; z-index: -1!important;display:block;}
+			
+		}
+		@media only screen and (min-width: 768px) and (max-width: 1139px) {
+		}
+		@media only screen and (min-width: 1140px) {
+		}
+		
+		
+		
+		</style>
+		<script>
+        window.onload = function() {
+            var panasonicLine = Snap("#panasonicLine");
+            panasonicLine.line(0, '95%', '75%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var microsoftLine = Snap("#microsoftLine");
+            microsoftLine.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var dbpLine = Snap("#dbpLine");
+            dbpLine.line(0, 0, '100%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var mitsubishiLine = Snap("#mitsubishiLine");
+            mitsubishiLine.line(0, 0, '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var blueLine = Snap("#blueLine");
+            blueLine.line(0, '15%', '85%', '85%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var bpiLine = Snap("#bpiLine");
+            bpiLine.line(0, 0, '45%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			
+
+        }
+        </script>
+    </head>
+    <body>
+    <noscript>Your browser does not support JavaScript!</noscript>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <aside>
+                    <a href="index.html"><img src="img/bci-logo.png" alt="BCI.eNav Logo" /></a>
+                    <p>30th floor, tycoon bldg. pearl drive avenue ortigas center pasig city <br />
+                    	tel# 6389478
+                    </p>
+                </aside>
+
+                <nav id="bci-menu" class="">
+                	<a href="about-us.html"><div class="menu-circle invisible">about us</div></a>
+	             	<a href="#"><div class="menu-circle" id="clients-menu">clients</div></a>
+	             	<a href="#"><div class="menu-circle invisible">portfolio</div></a>
+	             	<a href="whats-new.html"><div class="menu-circle invisible">what's new</div></a>
+	             	<a href="contact-us.html"><div class="menu-circle invisible">contact us</div></a>
+                </nav>
+				
+				<div class="main-content">
+					<div id="clients-container">
+					<svg width="100%" height="100%" id="rightLine" class="clients-doubleLine"></svg>
+					<svg width="100%" height="100%" id="leftLine" class="clients-doubleLine"></svg>
+					<div class="ui vertical divider resp-divider"></div>
+					
+						<div class="clients-img-container" id="clients-panasonic">
+							<svg width="100%" height="100%" id="panasonicLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/panasonic.png" alt="Panasonic" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-forex">
+							<a href="#"><img src="img/clients/forex.png" alt="Forex" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-dbp">
+							<svg width="100%" height="100%" id="dbpLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/dbp.png" alt="DBP" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-scentshop">
+							<a href="#"><img src="img/clients/scentshop.png" alt="ScentShop" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-ritemed">
+							<a href="#"><img src="img/clients/ritemed.png" alt="RiteMed" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-bpi">
+							<svg width="100%" height="100%" id="bpiLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/bpi.png" alt="BPI" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-blue">
+							<svg width="100%" height="100%" id="blueLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/blue.png" alt="B'lue" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-accenture">
+							<a href="#"><img src="img/clients/accenture.png" alt="Accenture" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-metrobank">
+							<a href="#"><img src="img/clients/metrobank.png" alt="Metrobank" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-microsoft">
+							<svg width="100%" height="100%" id="microsoftLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/microsoft.png" alt="Microsoft" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-ucpb">
+							<a href="#"><img src="img/clients/ucpb.png" alt="UCPB" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-mitsubishi">
+							<svg width="100%" height="100%" id="mitsubishiLine" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/mitsubishi.png" alt="Mitsubishi" class="clients-img"/></a>
+						</div>
+					</div>	
+				</div>	
+			</div> <!-- #main -->
+       	</div> <!-- #main-container -->
+    </body>
+</html>
