@@ -19,7 +19,28 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
+        <script src="js/vendor/snap.svg-min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            window.onload = function() {
+                var cu_linkedinLine = Snap("#cu-linkedin-line");
+                cu_linkedinLine.line('15%', '100%', '75%', '0%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cu_fbLine = Snap("#cu-fb-line");
+                cu_fbLine.line('5%', '100%', '100%', '0%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cu_careerLine = Snap("#cu-career-line");
+                cu_careerLine.line('0', '100%', '100%', '15%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cu_inquiryLine = Snap("#cu-inquiry-line");
+                cu_inquiryLine.line('0', '100%', '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                
+                //for responsive purposes
+                var cu_linkedinLine2 = Snap("#cu-linkedin-line2");
+                cu_linkedinLine2.line('15%', '100%', '100%', '0%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                var cu_careerLine2 = Snap("#cu-career-line2");
+                cu_careerLine2.line('0', '100%', '100%', '10%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                //var line = Snap("#line");
+                //line.line('50%', '0%', '50%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            }
+        </script>
     </head>
     <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -37,25 +58,33 @@
                 </aside>
 
                 <nav id="bci-menu" class="">
+                    <a href="index.html" ><div class="menu-circle">home</div></a>
                     <a href="about-us.html" class="invisible"><div class="menu-circle" id="about-menu">about us</div></a>
                     <a href="clients.html" class="invisible"><div class="menu-circle" id="clients-menu">clients</div></a>
                     <a href="portfolio.html" class="invisible"><div class="menu-circle" id="portfolio-menu">portfolio</div></a>
-                    <a href="whats-new.html" class="invisible"><div class="menu-circle" id="whats-new-menu">what's new</div></a>
                     <a href="contact-us.html"><div class="menu-circle" id="contact-us-menu" >contact us</div></a>
                 </nav>
-                
-                <div class="main-content">
-                    <div id="cu-lines">
-                        <div id="cu-linkedin-line"></div>
-                        <div id="cu-fb-line"></div>
-                        <div id="cu-career-line"></div>
-                        <div id="cu-inquiry-line"></div>
-                    </div>      
-                    <div id="cu-circle">
-                        <a href=""><div id="cu-circle-linkein"><img src="img/linkedIn.png" alt="" width="160px" height="160px"></div></a>
-                        <a href=""><div id="cu-circle-fb"><img src="img/fb-logo.png" alt="" width="250px" height="250px"></div></a>
-                        <a href=""><div id="cu-circle-career"><p>career</p></div></a>
-                        <a href=""><div id="cu-circle-inquiry"><p>inquirie</p></div></a>    
+                <div class="main-content">    
+                    <div id="cu-container">
+                        <svg width="100%" height="100%" id="line" class=""></svg>
+                        <div class="cu-img-container" id="cu-circle-linkein">
+                            <svg width="100%" height="100%" id="cu-linkedin-line" class="cu-line"></svg>
+                            <svg width="100%" height="100%" id="cu-linkedin-line2" class="cu-line"></svg>
+                            <a href=""><img src="img/contactus/linkedIn.png" alt="Linked In" class="cu-img"></a>
+                        </div>
+                        <div class="cu-img-container" id="cu-circle-fb">
+                            <svg width="100%" height="100%" id="cu-fb-line" class="cu-line"></svg>
+                            <a href=""><img src="img/contactus/fb-logo.png" alt="Fb" class="cu-img"></a>
+                        </div>
+                        <div class="cu-img-container" id="cu-circle-career">
+                            <svg width="100%" height="100%" id="cu-career-line" class="cu-line"></svg>
+                            <svg width="100%" height="100%" id="cu-career-line2" class="cu-line"></svg>
+                            <a href=""><img src="img/contactus/career.png" alt="Career" class="cu-img"></a>
+                        </div>
+                        <div class="cu-img-container" id="cu-circle-inquiry">
+                            <svg width="100%" height="100%" id="cu-inquiry-line" class="cu-line"></svg>
+                            <a href=""><img src="img/contactus/inquiry.png" alt="Inquiry" class="cu-img"></a>
+                        </div>
                     </div>
                 </div>  
             </div> <!-- #main -->

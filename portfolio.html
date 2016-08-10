@@ -19,7 +19,50 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
+        <script src="js/vendor/snap.svg-min.js"></script>
         <script src="js/main.js"></script>
+        
+        
+        <script type="text/javascript">
+            window.onload = function () {
+                var eventLine = Snap("#eventLine");
+                var printLine = Snap("#printLine");
+                var digitalLine = Snap("#digitalLine");
+                var actLine = Snap("#actLine");
+                var tvLine = Snap("#tvLine");
+                var oneLine = Snap("#oneLine");
+                var sLine = Snap("#sLine");
+                
+                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-1' });
+                printLine.line(0, '50%', '80%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-1' });
+                digitalLine.line(0, '50%', '50%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-1' });                
+                actLine.line(0, '50%', '40%', '83%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-1' });
+                tvLine.line(0, '50%', '80%', '73%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-1' });
+                
+                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-2' });
+                printLine.line(0, '50%', '80%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-2' });
+                digitalLine.line(0, '50%', '55%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-2' });
+                actLine.line(0, '50%', '40%', '83%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-2' });
+                tvLine.line(0, '50%', '85%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-2' });
+                
+                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-3' });
+                printLine.line(0, '50%', '78%', '20%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-3' });
+                digitalLine.line(0, '50%', '55%', '45%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-3' });
+                actLine.line(0, '50%', '40%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-3' });
+                tvLine.line(0, '50%', '85%', '63%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-3' });
+
+                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-4' });
+                printLine.line(0, '50%', '80%', '13%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-4' });
+                digitalLine.line(0, '50%', '55%', '37%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-4' });
+                actLine.line(0, '50%', '40%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-4' });
+                tvLine.line(0, '50%', '85%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-4' });
+
+                oneLine.line('50%', '0', '50%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5});
+                sLine.line(0, '3%', '50%', '8%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5});
+                
+            }
+        </script>
+
     </head>
     <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -32,35 +75,77 @@
                 <aside>
                     <a href="index.html"><img src="img/bci-logo.png" alt="BCI.eNav Logo" /></a>
                     <p>30th floor, tycoon bldg. pearl drive avenue ortigas center pasig city <br />
-                    	tel# 6389478
+                        tel# 6389478
                     </p>
                 </aside>
 
-                <nav id="bci-menu" class="">
-                	<a href="about-us.html" class="invisible"><div class="menu-circle" id="about-menu">about us</div></a>
-	             	<a href="clients.html" class="invisible"><div class="menu-circle" id="clients-menu">clients</div></a>
-	             	<a href="portfolio.html"><div class="menu-circle" id="portfolio-menu">portfolio</div></a>
-	             	<a href="whats-new.html" class="invisible"><div class="menu-circle" id="whats-new-menu">what's new</div></a>
-	             	<a href="contact-us.html" class="invisible"><div class="menu-circle" id="contact-us-menu">contact us</div></a>
+                <nav id="bci-menu" class="port-menu">
+                    <a href="index.html"><div class="menu-circle">home</div></a>
+                    <a href="about-us.html"><div class="menu-circle invisible" id="about-menu">about us</div></a>
+                    <a href="#"><div class="menu-circle invisible">clients</div></a>
+                    <a href="#"><div class="menu-circle" id="port-menu"><p>portfolio</p></div></a>
+                    <a href="contact-us.html"><div class="menu-circle invisible">contact us</div></a>
                 </nav>
-				
-				<div class="main-content">
-				    <div id="port-lines">
-                       <div id="eventLine"></div>
-                       <div id="printLine"></div>
-                       <div id="digitalLine"></div>
-                       <div id="tvLine"></div>
-                       <div id="actLine"></div>
+                
+                <div class="main-content" id="port-content">
+                    <div id="port-lines">
+                        <svg width="100%" height="100%" id="eventLine" class="clients-doubleLine"></svg>
+                        <svg width="100%" height="100%" id="printLine" class="clients-doubleLine"></svg>
+                        <svg width="100%" height="100%" id="digitalLine" class="clients-doubleLine"></svg>
+                        <svg width="100%" height="100%" id="actLine" class="clients-doubleLine"></svg>
+                        <svg width="100%" height="100%" id="tvLine" class="clients-doubleLine"></svg>
                     </div>
-                    <div id="port-circles">
-                        <div id="port-events"><p>events</p>></div>
-                        <div id="port-print"><p>print</p></div>
-                        <div id="port-digital"><p>digital</p></div>
-                        <div id="port-activations"><p>activation</p></div>
-                        <div id="port-tv"><p>tv</p></div>
+
+                    <svg width="100%" height="100%" id="sLine" class="clients-doubleLine"></svg>
+                    <svg width="100%" height="100%" id="oneLine" class="clients-doubleLine"></svg>
+                    <div class="port-circle-events port-bg port-img-events">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>event</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-				</div>	
-			</div> <!-- #main -->
-       	</div> <!-- #main-container -->
+                      <div class="port-circle-print port-bg port-img-print">
+                          <div class="port-content">
+                              <div class="port-table">
+                                  <div class="port-table-cell">
+                                      <p>print</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                     <div class="port-circle-digital port-bg port-img-digital">
+                        <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-circle-activation port-bg port-img-activation">
+                        <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>activation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-circle-tv port-bg port-img-tv">
+                        <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>tv</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+
+                </div>  <!-- end port content -->
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
     </body>
 </html>
