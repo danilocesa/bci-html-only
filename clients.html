@@ -24,20 +24,45 @@
 
 		<script>
         window.onload = function() {
-            var panasonicLine = Snap("#panasonicLine");
-            panasonicLine.line(0, '95%', '75%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-			var microsoftLine = Snap("#microsoftLine");
-            microsoftLine.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-			var dbpLine = Snap("#dbpLine");
-            dbpLine.line(0, 0, '100%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-			var mitsubishiLine = Snap("#mitsubishiLine");
-            mitsubishiLine.line(0, 0, '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-			var blueLine = Snap("#blueLine");
-            blueLine.line(0, '15%', '85%', '85%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-			var bpiLine = Snap("#bpiLine");
-            bpiLine.line(0, 0, '45%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            var panasonicLine1 = Snap("#panasonicLine1");
+            //panasonicLine1.line(0, '95%', '75%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            panasonicLine1.line(0, '95%', '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var microsoftLine1 = Snap("#microsoftLine1");
+            microsoftLine1.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var dbpLine1 = Snap("#dbpLine1");
+            //dbpLine1.line(0, 0, '100%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            dbpLine1.line(0, 0, '100%', '65%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var mitsubishiLine1 = Snap("#mitsubishiLine1");
+            mitsubishiLine1.line(0, 0, '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var blueLine1 = Snap("#blueLine1");
+            //blueLine1.line(0, '15%', '85%', '85%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            blueLine1.line(0, '15%', '100%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var bpiLine1 = Snap("#bpiLine1");
+            bpiLine1.line(0, 0, '45%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			
-
+			/*For Responsive purposes*/
+			var leftLine = Snap("#leftLine");
+            leftLine.line('60%', 0, '5%', '10%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var rightLine = Snap("#rightLine");
+            rightLine.line('5%', 0, '60%', '10%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var panasonicLine2 = Snap("#panasonicLine2");
+            panasonicLine2.line('10%', '100%', '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var microsoftLine2 = Snap("#microsoftLine2");
+            microsoftLine2.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var forexLine2 = Snap("#forexLine2");
+            forexLine2.line(0, '50%', '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var mitsubishiLine2 = Snap("#mitsubishiLine2");
+            mitsubishiLine2.line(0, 0, '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var dbpLine2 = Snap("#dbpLine2");
+            dbpLine2.line(0, 0, '100%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var blueLine2 = Snap("#blueLine2");
+            blueLine2.line(0, 0, '90%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var scentshopLine2 = Snap("#scentshopLine2");
+            scentshopLine2.line(0, 0, '90%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var scentshopLine3 = Snap("#scentshopLine3");
+            scentshopLine3.line(0, 0, '70%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var panasonicLine3 = Snap("#panasonicLine3");
+            panasonicLine3.line(0, '100%', '100%', '40%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
         }
         </script>
     </head>
@@ -66,51 +91,68 @@
 				
 				<div class="main-content">
 					<div id="clients-container">
-					<svg width="100%" height="100%" id="rightLine" class="clients-doubleLine"></svg>
-					<svg width="100%" height="100%" id="leftLine" class="clients-doubleLine"></svg>
-					<div class="clients-img-container" id="clients-panasonic">
-						<svg width="100%" height="100%" id="panasonicLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/panasonic.png" alt="Panasonic" class="clients-img"/></a>
+						<!--for responsive purposes-->
+						<div class="clients-doubleLine-container">
+							<div id="clients-left-container">
+								<svg width="100%" height="100%" id="leftLine" class="clients-doubleLine"></svg>
+							</div>
+							<div id="clients-right-container">
+								<svg width="100%" height="100%" id="rightLine" class="clients-doubleLine"></svg>
+							</div>
+						</div>
+						<!--end-->
+						<div class="clients-img-container" id="clients-panasonic">
+							<svg width="100%" height="100%" id="panasonicLine1" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="panasonicLine2" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="panasonicLine3" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/panasonic.png" alt="Panasonic" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-forex">
+							<svg width="100%" height="100%" id="forexLine2" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/forex.png" alt="Forex" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-dbp">
+							<svg width="100%" height="100%" id="dbpLine1" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="dbpLine2" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/dbp.png" alt="DBP" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-scentshop">
+							<svg width="100%" height="100%" id="scentshopLine2" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="scentshopLine3" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/scentshop.png" alt="ScentShop" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-ritemed">
+							<a href="#"><img src="img/clients/ritemed.png" alt="RiteMed" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-bpi">
+							<svg width="100%" height="100%" id="bpiLine1" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/bpi.png" alt="BPI" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-blue">
+							<svg width="100%" height="100%" id="blueLine1" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="blueLine2" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/blue.png" alt="B'lue" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-accenture">
+							<a href="#"><img src="img/clients/accenture.png" alt="Accenture" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-metrobank">
+							<a href="#"><img src="img/clients/metrobank.png" alt="Metrobank" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-microsoft">
+							<svg width="100%" height="100%" id="microsoftLine1" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="microsoftLine2" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/microsoft.png" alt="Microsoft" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-ucpb">
+							<a href="#"><img src="img/clients/ucpb.png" alt="UCPB" class="clients-img"/></a>
+						</div>
+						<div class="clients-img-container" id="clients-mitsubishi">
+							<svg width="100%" height="100%" id="mitsubishiLine1" class="clients-line"></svg>
+							<svg width="100%" height="100%" id="mitsubishiLine2" class="clients-line"></svg>
+							<a href="#"><img src="img/clients/mitsubishi.png" alt="Mitsubishi" class="clients-img"/></a>
+						</div>
 					</div>
-					<div class="clients-img-container" id="clients-forex">
-						<a href="#"><img src="img/clients/forex.png" alt="Forex" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-dbp">
-						<svg width="100%" height="100%" id="dbpLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/dbp.png" alt="DBP" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-scentshop">
-						<a href="#"><img src="img/clients/scentshop.png" alt="ScentShop" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-ritemed">
-						<a href="#"><img src="img/clients/ritemed.png" alt="RiteMed" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-bpi">
-						<svg width="100%" height="100%" id="bpiLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/bpi.png" alt="BPI" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-blue">
-						<svg width="100%" height="100%" id="blueLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/blue.png" alt="B'lue" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-accenture">
-						<a href="#"><img src="img/clients/accenture.png" alt="Accenture" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-metrobank">
-						<a href="#"><img src="img/clients/metrobank.png" alt="Metrobank" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-microsoft">
-						<svg width="100%" height="100%" id="microsoftLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/microsoft.png" alt="Microsoft" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-ucpb">
-						<a href="#"><img src="img/clients/ucpb.png" alt="UCPB" class="clients-img"/></a>
-					</div>
-					<div class="clients-img-container" id="clients-mitsubishi">
-						<svg width="100%" height="100%" id="mitsubishiLine" class="clients-line"></svg>
-						<a href="#"><img src="img/clients/mitsubishi.png" alt="Mitsubishi" class="clients-img"/></a>
-					</div>
-					</div>	
 				</div>	
 			</div> <!-- #main -->
        	</div> <!-- #main-container -->
