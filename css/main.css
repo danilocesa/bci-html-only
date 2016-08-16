@@ -33,6 +33,8 @@ html * { font-family: woodcut !important; }
 #pLine{ position:absolute; top:0; left:0;}
 #wLine{ position:absolute; top:0; }
 #cuLine{ position:absolute; top:1em; }
+#wLine2{display:none;}
+#pLine2{display:none;}
 /* ==========================================================================
    About Us
 ========================================================================== */
@@ -83,6 +85,19 @@ html * { font-family: woodcut !important; }
 #cu-inquiry-line{position: absolute;left: -225%;top: 60px;z-index: -1;width: 265%;height:11em;}
 #cu-linkedin-line2{display:none;}
 #cu-career-line2{display:none;}
+#cu-form{ position:absolute;  width:85%;  left:-10%; top:7em; z-index:10; padding:15px 20px; background:white; border: 2px solid rgb(183,183,183); }
+#cu-form .cu-form-field{ clear:both; margin:0 auto; margin-bottom: 5px;}
+#cu-form .cu-form-field>label{ display:inline-block; width: auto; vertical-align:middle; margin:0 auto; font-size:1.3em; }
+#cu-form .cu-form-field>input[type=text]{ display:inline-block; width: 70%; vertical-align:middle; font-size:1em; float: right;}
+#cu-form .cu-form-field>textarea{ width:100%; height:10em; font-size:1em;}
+#cu-form .message{ margin-top: 5%;}
+#cu-form .cu-form-field>input[type=text], .cu-form-field>textarea{ padding: 2px; background: #FFF;  border: 1px solid rgb(185,185,185); border-radius: 1px; box-shadow: 0 0 0 0 transparent inset; -webkit-transition: color .1s ease,border-color .1s ease; transition: color .1s ease,border-color .1s ease;}
+#cu-form .button{ float:right; width:100%; margin-top: -.8em;}
+#cu-form .cu-form-field>input[type=submit]{ width: 20%; height: 1.8em; display: inline; background: rgb(0,134,199); border: none; color: white; font-size: 1.1em; float:right; margin-left: 0.3em;}
+#cu-form .cu-attach-icon{ cursor: pointer; width: 8% !important; height: 1.55em; background: rgb(0,134,199); border: none; color: white; text-align: center; padding-top: 2px; float:right;}
+#cu-form .cu-attach-icon>img{ width: 50%; height:50%}
+#cu-form .cu-form-field>input[type=file]{ display:none;}
+.cu-error{ display:block; clear:both; float:right; color:red; font-size:12px;}
 /* ==========================================================================
    Whats New
 ========================================================================== */
@@ -107,9 +122,9 @@ html * { font-family: woodcut !important; }
 .port-circle-print p{    color:white;     font-size:5vw;     position:absolute;     left:8px;     top:23%}
 .port-circle-digital{    float:left;     position:relative;     width:24%;     padding-bottom:24%;     margin:0 10% 0 30%;     overflow:hidden}
 .port-circle-digital p{    color:white;     font-size:2.6vw;     position:absolute;     bottom:0px;     left:0;     right:0}
-.port-circle-activation{    float:left;     position:relative;     width:34%;     padding-bottom:34%;     margin:3% 0 0 7%;     overflow:hidden}
+.port-circle-activation{    float:left;     position:relative;     width:34%;     padding-bottom:34%;     margin:4% 0 0 7%;     overflow:hidden}
 .port-circle-activation p{    color:white;     font-size:3.5vw;     position:absolute;     bottom:15%;     left:0;     right:0}
-.port-circle-tv{    float:left;     position:relative;     width:49%;     padding-bottom:49%;     margin:-12% 0px 0px 8%;     overflow:hidden}
+.port-circle-tv{    float:left;     position:relative;     width:49%;     padding-bottom:49%;     margin:-15% 0px 0px 8%;     overflow:hidden}
 .port-circle-tv p{    color:white;     font-size:15vw}
 .port-content{    position:absolute;     height:100%;     width:100%;     padding:10%}
 .port-table{    display:table;     width:100%;     height:100%}
@@ -120,7 +135,7 @@ html * { font-family: woodcut !important; }
 .port-img-digital{    background-image:url('../img/portfolio/digital.png')}
 .port-img-activation{    background-image:url('../img/portfolio/activations.png')}
 .port-img-tv{    background-image:url('../img/portfolio/tv.png')}
-#port-lines{ width:100%;  margin-left:-15%;  position:absolute;  min-height:600px}
+#port-lines{ width:100%;  margin-left:-20%;  position:absolute;  min-height:600px}
 #eline-1, #pline-1, #dline-1, #aline-1, #tline-1 {display:block;}
 #eline-2, #pline-2, #dline-2, #aline-2, #tline-2 { display: none; }
 #eline-3, #pline-3, #dline-3, #aline-3, #tline-3 { display: none; }
@@ -132,6 +147,19 @@ html * { font-family: woodcut !important; }
 #digitalLine{position: absolute;z-index:-1;width:100%;}
 #actLine{position: absolute;z-index:-1;width:100%;}
 #tvLine{position: absolute;z-index:-1;width:100%;}
+.main-height {min-height:450px;}
+/*Other Details*/
+#port-main a {color:#00B8E8;}
+#event-details {width: 50%;position: absolute;  margin: 16% 0px 0px 37%;}
+#digital-details {width: 100%;margin: 22% 0 0 26%;position: absolute;}
+#activation-details {width: 100%;margin: 50% 0 0 9%;position: absolute;}
+#tv-details {width: 100%;margin: 30% 0 0 57%;position: absolute;}
+/*Print*/
+#print-details {margin-top: 15%;width: 100%;}
+#print-details p{ font-size:1.7em;}
+.print-details-top {background-color:white; border:2px solid black; width:49%; min-height: 200px; float:left;     position:relative; padding-bottom:30%;overflow:hidden; margin:2px;}
+.print-details-bottom {background-color:white;border:2px solid black; width:24%; min-height: 200px; float:left;     position:relative; padding-bottom:30%;overflow:hidden; margin:2px;}
+.hide {display: none;}
 
 /* ==========================================================================
    Clients
@@ -209,7 +237,11 @@ html * { font-family: woodcut !important; }
 #contact-us-menu:after{ content:"";  display:block;  width:0px;  height:40px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:0 auto;  padding:0px;  margin-top:25%}
 .cu-img-container:after{ content:"";  display:block;  width:0px;  height:15px;  border:0;  border-left:2px solid rgb(185,185,185); ;  margin:0 auto;  padding:0px}
 .cu-img-container:last-child:after{ display:none}
-
+#cu-form{left: 7%; top: 9.5em;}
+#cu-form .cu-form-field>label {font-size:0.9em;}
+#cu-form .cu-form-field>textarea{height: 8em;}
+#cu-form .cu-attach-icon{ padding-top: 5px; height: 2.2em; width: 10% !important;}
+#cu-form .cu-form-field>input[type=text], .cu-form-field>textarea{font-size: 0.9em;}
 /* ==========================================================================
     About Us
 ========================================================================== */
@@ -245,7 +277,7 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Portfolio
 ========================================================================== */
-.port-menu a:not(:nth-child(3)){ display:none}
+.port-menu div:not(#port-menu), div:not(:first-child()){ display:none}
 #port-menu{ width:100px;  height:100px;  position:relative;  margin:10% auto}
 #port-menu p{ position:relative;  top:50%;  transform:translateY(-50%)}
 #port-lines{ display:none}
@@ -261,6 +293,12 @@ html * { font-family: woodcut !important; }
 .port-circle-tv p{ font-size:19vw}
 #oneLine{ display:block;  position:absolute;  height:100%;  margin-top:-30%;  z-index:-1}
 #sLine{display:none}
+/*Other Details*/
+#event-details, #digital-details, #activation-details, #tv-details{    margin: 0 0 10% 0;text-align: center;width: 100%;}
+/*Print Details*/
+#print-details {margin-top: 0;}
+.print-details-top { width:98%;}
+.print-details-bottom { width:98%;}
 /* ==========================================================================
     Clients
 ========================================================================== */
@@ -304,7 +342,7 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Portfolio
 ========================================================================== */
-.port-menu a:not(:nth-child(3)){ display:none}
+.port-menu div:not(#port-menu), div:not(:first-child()){ display:none}
 #port-menu{ width:100px;  height:100px;  position:relative;  margin:10% auto}
 #port-menu p{ position:relative;  top:50%;  transform:translateY(-50%)}
 #port-lines{ display:none}
@@ -320,7 +358,13 @@ html * { font-family: woodcut !important; }
 .port-circle-tv p{ font-size:19vw}
 #oneLine{ display:block;  position:absolute;  height:100%;  margin-top:-30%;  z-index:-1}
 #sLine{display:none}
+/*Other Details*/
+#event-details, #digital-details, #activation-details, #tv-details{    margin: 0 0 10% 0;text-align: center;width: 100%;}
 
+/*Print Details*/
+#print-details {margin-top: 0;}
+.print-details-top { width:98%;}
+.print-details-bottom { width:48%;}
 /* ==========================================================================
    Whats New
 ========================================================================== */
@@ -342,8 +386,13 @@ html * { font-family: woodcut !important; }
 #cu-container{ width:100%;  left:0;top:0.9em;}
 .cu-img-container{ width:40% !important;  height:40% !important;  left:30% !important;  position:relative !important;  top:0 !important}
 #contact-us-menu:after{ content:"";  display:block;  width:0px;  height:40px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:0 auto;  padding:0px;  margin-top:21%}
-.cu-img-container:after{ content:"";  display:block;  width:0px;  height:20px;  border:0;  border-left:2px solid rgb(185,185,185); ;  margin:0 auto;  padding:0px}
+.cu-img-container:after{ content:"";  display:block;  width:0px;  height:75px;  border:0;  border-left:2px solid rgb(185,185,185); ;  margin:0 auto;  padding:0px}
 .cu-img-container:last-child:after{ display:none}
+#cu-form{top: 14em;left: 8%;}
+#cu-form .cu-form-field>label {font-size:0.9em;}
+#cu-form .cu-form-field>textarea{height: 8.5em;}
+#cu-form .cu-attach-icon{ padding-top: 5px; height: 2.2em; width: 10% !important;}
+#cu-form .cu-form-field>input[type=text], .cu-form-field>textarea{font-size: 0.9em;}
 #home-menu{ width:100px;  height:100px;  margin:0 auto;  line-height:3.5em;  margin-bottom:15px}
 
 /* ==========================================================================
@@ -409,9 +458,13 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Index
 ========================================================================== */
-#art-hand{width:65%;position:absolute;top:225px;left:30%}
+#art-hand{width:65%;position:absolute;top:50%;left:30%}
 #art-hand img{width:100%}
-#line-art-connection{display:none;width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
+#line-art-connection{width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
+#wLine{display:none;}
+#wLine2{display:block;position:absolute; top:0;height: 35em;}
+#pLine{display:none;}
+#pLine2{display:block; position:absolute; top:0; left:0;}
 
 /* ==========================================================================
    Contact Us
@@ -428,6 +481,10 @@ html * { font-family: woodcut !important; }
 #cu-career-line{display:none;}
 #cu-career-line2{position: absolute;left: -495%;top: 0%;z-index: -1;width: 530%;height: 23em;display:block;}
 #cu-inquiry-line {left: -300%;width: 370%;top: 10%;height: 11em;}
+#cu-form{top: 6.5em;left: -15%;}
+#cu-form .cu-form-field>label {font-size:0.9em;}
+#cu-form .cu-attach-icon{ padding-top: 5px; height: 2.2em; }
+#cu-form .cu-form-field>input[type=text], .cu-form-field>textarea{font-size: 0.9em;}
 /* ==========================================================================
    About Us
    ========================================================================== */
@@ -458,8 +515,8 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
    Portfolio
 ========================================================================== */
-.port-menu a:not(:nth-child(3)){ display:none}
-#port-menu{ width:100px;  height:100px;  position:relative;  margin:10% auto}
+.port-menu div:not(#home-menu):not(#port-menu) { display:none;}
+#port-menu{ width:100px;  height:100px;  position:relative;  margin:20% auto}
 #port-menu p{ position:relative;  top:50%;  transform:translateY(-50%)}
 #port-lines{ display:none}
 .port-circle-events{ float:none;  width:50%;  padding-bottom:50%;  margin:0 auto 10%}
@@ -474,6 +531,13 @@ html * { font-family: woodcut !important; }
 .port-circle-tv p{ font-size:14.5vw}
 #oneLine{ display:block;  position:absolute;  height:90%;  margin-top:0;  z-index:-1}
 #sLine{ display:block;  position:absolute;  z-index:-1;  margin-left:-20%}
+/*Other Details*/
+#event-details, #digital-details, #activation-details, #tv-details{    margin: 0 0 10% 0;text-align: center;width: 100%;}
+
+/*Print Details*/
+#print-details {margin-top: 0;}
+.print-details-top { width:98%; height: 70%; float:left;     position:relative; padding-bottom:30%;overflow:hidden; margin:2px;}
+.print-details-bottom { width:48%; height: 70%; float:left;     position:relative; padding-bottom:30%;overflow:hidden; margin:2px;}
 
 /* ==========================================================================
    Clients
@@ -601,13 +665,32 @@ nav {float: right;width: 38%;}
     #eline-2, #pline-2, #dline-2, #aline-2, #tline-2 { display: none; }
     #eline-3, #pline-3, #dline-3, #aline-3, #tline-3 { display: block; }
     #eline-4, #pline-4, #dline-4, #aline-4, #tline-4 { display: none; }
+     /*Other Details*/
+    #event-details {margin: 14% 0px 0px 35%;}
+    #digital-details {margin: 19% 0 0 24%;}
+    #activation-details {margin: 46% 0 0 5%;}
+    #tv-details {margin: 30% 0 0 54%;}     
 }
-@media only screen and (min-width: 700px) and (max-width: 899px) {
+@media only screen and (min-width: 768px) and (max-width: 899px) {
     #eline-1, #pline-1, #dline-1, #aline-1, #tline-1 {display:none;}
     #eline-2, #pline-2, #dline-2, #aline-2, #tline-2 { display: none; }
     #eline-3, #pline-3, #dline-3, #aline-3, #tline-3 { display: none; }
     #eline-4, #pline-4, #dline-4, #aline-4, #tline-4 { display: block; }
+     /*Other Details*/
+    #event-details {margin: 13% 0px 0px 37%;}
+    #digital-details {margin: 16% 0 0 20%;}
+    #activation-details {margin: 43% 0 0 2%;}
+    #tv-details {margin: 27% 0 0 49%;} 
+    /*#event-details, #digital-details, #activation-details, #tv-details{    margin: 0 auto;text-align: center;width: 100%;}*/
+  /*Print Details*/
+  #print-details {margin: 0 10px;}
+  .print-details-top {width:98%; min-height: 200px;}
+  .print-details-bottom {width:48%; min-height: 200px; }    
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1040px) {#cu-form .cu-form-field>label {font-size: 1.25em;}}
+@media only screen and (min-width: 1041px) and (max-width: 1139px) {#cu-form .cu-form-field>label {font-size: 1.25em;}}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

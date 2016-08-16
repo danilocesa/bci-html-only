@@ -24,6 +24,152 @@
         
         
         <script type="text/javascript">
+                        
+            $(document).ready(function(){
+
+                $(".port-circle-print").click(function() {
+                    $("#print-details").show();
+                    $("#port-lines").hide();
+                    $("#port-main").hide();
+                });
+
+                $('.port-circle-events').click(function(){
+                    var main = $('.port-circle-events');
+                    var line = $("#port-lines svg:not(#eventLine)");
+                    var details = $("#event-details");
+
+                    var func = $(this).hasClass('active') ? 'removeClass' : 'addClass';
+                    $(this).addClass('active');
+                    $(this)[func]('active');                     
+                    
+                    clickCircle(main,line,details,'events');   
+           
+                    $(window).resize(function(){
+                        if($('.port-circle-events').hasClass('active')){
+                            clickCircle(main,line,details,'events');                    
+                        }
+
+                    });
+                 });  
+
+                $('.port-circle-digital').click(function(){
+                    var main = $('.port-circle-digital');
+                    var line = $("#port-lines svg:not(#digitalLine)");
+                    var details = $("#digital-details");
+
+                    var func = $(this).hasClass('active') ? 'removeClass' : 'addClass';
+                    $(this).addClass('active');
+                    $(this)[func]('active');   
+                    
+                    clickCircle(main,line,details,'digital');  
+
+                    $(window).resize(function(){
+                        if($('.port-circle-digital').hasClass('active')){
+                            clickCircle(main,line,details,'digital');                       
+                        }
+
+                    });
+                 });     
+
+                $('.port-circle-activation').click(function(){
+                    var main = $('.port-circle-activation');
+                    var line = $("#port-lines svg:not(#actLine)");
+                    var details = $("#activation-details");
+
+                    var func = $(this).hasClass('active') ? 'removeClass' : 'addClass';
+                    $(this).addClass('active');
+                    $(this)[func]('active'); 
+
+                    clickCircle(main,line,details,'activation'); 
+
+                    $(window).resize(function(){
+                        if($('.port-circle-activation').hasClass('active')){
+                            clickCircle(main,line,details,'activation');                                      
+                        }
+
+                    });
+                 });        
+
+                $('.port-circle-tv').click(function(){
+                    var main = $('.port-circle-tv');
+                    var line = $("#port-lines svg:not(#tvLine)");
+                    var details = $("#tv-details");
+
+                    var func = $(this).hasClass('active') ? 'removeClass' : 'addClass';
+                    $(this).addClass('active');
+                    $(this)[func]('active'); 
+
+                    clickCircle(main,line,details,'tv');
+
+                    $(window).resize(function(){
+                        if($('.port-circle-tv').hasClass('active')){
+                            clickCircle(main,line,details,'tv');                        
+                        }
+
+                    });
+                 });                                           
+             
+            }); 
+
+            function clickCircle(main,line,details,a) {
+                var w = $(window).width();
+                
+                if(w <= 750) {
+                    var func = main.hasClass('active') ? 'addClass' : 'removeClass';            
+                        if(a != 'events') {$("#events").removeClass('invisible').removeClass("hide");}
+                        if(a != 'print') {$("#print").removeClass('invisible').removeClass("hide");}
+                        if(a != 'digital') {$("#digital").removeClass('invisible').removeClass("hide");}
+                        if(a != 'activation') {$("#activation").removeClass('invisible').removeClass("hide");}
+                        if(a != 'tv') {$("#tv").removeClass('invisible').removeClass("hide");}
+                        line.removeClass("invisible");
+                        if(a != 'events') {$("#events").removeClass('invisible')[func]("hide"); }
+                        if(a != 'print') {$("#print").removeClass('invisible')[func]("hide"); }
+                        if(a != 'digital') {$("#digital").removeClass('invisible')[func]("hide"); }
+                        if(a != 'activation') {$("#activation").removeClass('invisible')[func]("hide"); }
+                        if(a != 'tv') {$("#tv").removeClass('invisible')[func]("hide"); }
+                        line[func]("invisible");      
+
+                    var func2 = main.hasClass('active') ? 'removeClass' : 'addClass';
+                        details.removeClass("invisible");
+                        details[func2]("invisible"); 
+
+                    if(w > 462 ){
+                        if(main.hasClass('active')){ $("#oneLine").addClass("invisible");}else {$("#oneLine").removeClass("invisible");}
+                    }
+                    else {
+                        main.hasClass('active') ? $("#oneLine").removeClass("invisible") : null;
+                    }
+
+                }
+                else {
+                    var func = main.hasClass('active') ? 'addClass' : 'removeClass';
+                        if(a != 'events') {$("#events").removeClass('hide').removeClass("invisible");}
+                        if(a != 'print') {$("#print").removeClass('hide').removeClass("invisible");}
+                        if(a != 'digital') {$("#digital").removeClass('hide').removeClass("invisible");}
+                        if(a != 'activation') {$("#activation").removeClass('hide').removeClass("invisible");}
+                        if(a != 'tv') { $("#tv").removeClass('hide').removeClass("invisible");}
+                        line.removeClass("invisible");
+                        if(a != 'events') {$("#events").removeClass('hide')[func]("invisible");}
+                        if(a != 'print') {$("#print").removeClass('hide')[func]("invisible"); }
+                        if(a != 'digital') {$("#digital").removeClass('hide')[func]("invisible"); }
+                        if(a != 'activation') {$("#activation").removeClass('hide')[func]("invisible"); }
+                        if(a != 'tv') {$("#tv").removeClass('hide')[func]("invisible"); }
+                        line[func]("invisible");
+                    var func2 = main.hasClass('active') ? 'removeClass' : 'addClass';
+                        details.removeClass("invisible");
+                        details[func2]("invisible"); 
+
+                    var w = $(window).width();
+                    if(w > 462 ){
+                        if(main.hasClass('active')){ $("#oneLine").addClass("invisible");}else {$("#oneLine").removeClass("invisible");}
+                    }
+                    else {
+                        main.hasClass('active') ? $("#oneLine").removeClass("invisible") : null;
+                    }                    
+                }              
+                                    
+            };
+            
             window.onload = function () {
                 var eventLine = Snap("#eventLine");
                 var printLine = Snap("#printLine");
@@ -33,32 +179,32 @@
                 var oneLine = Snap("#oneLine");
                 var sLine = Snap("#sLine");
                 
-                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-1' });
-                printLine.line(0, '50%', '80%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-1' });
-                digitalLine.line(0, '50%', '50%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-1' });                
-                actLine.line(0, '50%', '40%', '83%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-1' });
-                tvLine.line(0, '50%', '80%', '73%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-1' });
+                eventLine.line(0, '75%', '35%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-1' });
+                printLine.line(0, '75%', '83%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-1' });
+                digitalLine.line(0, '75%', '62%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-1' });                
+                actLine.line(0, '75%', '45%', '86%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-1' });
+                tvLine.line(0, '75%', '89%', '67%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-1' });
                 
-                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-2' });
-                printLine.line(0, '50%', '80%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-2' });
-                digitalLine.line(0, '50%', '55%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-2' });
-                actLine.line(0, '50%', '40%', '83%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-2' });
-                tvLine.line(0, '50%', '85%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-2' });
+                eventLine.line(0, '75%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-2' });
+                printLine.line(0, '75%', '80%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-2' });
+                digitalLine.line(0, '75%', '55%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-2' });
+                actLine.line(0, '75%', '40%', '83%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-2' });
+                tvLine.line(0, '75%', '85%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-2' });
                 
-                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-3' });
-                printLine.line(0, '50%', '78%', '20%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-3' });
-                digitalLine.line(0, '50%', '55%', '45%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-3' });
-                actLine.line(0, '50%', '40%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-3' });
-                tvLine.line(0, '50%', '85%', '63%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-3' });
+                eventLine.line(0, '75%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-3' });
+                printLine.line(0, '75%', '78%', '20%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-3' });
+                digitalLine.line(0, '75%', '55%', '45%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-3' });
+                actLine.line(0, '75%', '40%', '70%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-3' });
+                tvLine.line(0, '75%', '85%', '63%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-3' });
 
-                eventLine.line(0, '50%', '25%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-4' });
-                printLine.line(0, '50%', '80%', '13%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-4' });
-                digitalLine.line(0, '50%', '55%', '37%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-4' });
-                actLine.line(0, '50%', '40%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-4' });
-                tvLine.line(0, '50%', '85%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-4' });
+                eventLine.line(0, '75%', '32%', '16%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'eline-4' });
+                printLine.line(0, '75%', '80%', '13%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-4' });
+                digitalLine.line(0, '75%', '55%', '37%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-4' });
+                actLine.line(0, '75%', '40%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-4' });
+                tvLine.line(0, '75%', '85%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-4' });
 
                 oneLine.line('50%', '0', '50%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5});
-                sLine.line(0, '3%', '50%', '8%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5});
+                sLine.line(0, '170px', '70%', '8%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5});
                 
             }
         </script>
@@ -80,24 +226,87 @@
                 </aside>
 
                 <nav id="bci-menu" class="port-menu">
-                    <a href="index.html"><div class="menu-circle">home</div></a>
+                    <a href="index.html"><div class="menu-circle" id="home-menu">home</div></a>
                     <a href="about-us.html"><div class="menu-circle invisible" id="about-menu">about us</div></a>
-                    <a href="#"><div class="menu-circle invisible">clients</div></a>
-                    <a href="#"><div class="menu-circle" id="port-menu"><p>portfolio</p></div></a>
+                    <a href="clients.html"><div class="menu-circle invisible">clients</div></a>
+                    <a href="portfolio.html"><div class="menu-circle" id="port-menu"><p>portfolio</p></div></a>
                     <a href="contact-us.html"><div class="menu-circle invisible">contact us</div></a>
                 </nav>
                 
                 <div class="main-content" id="port-content">
+                     <!-- Print Details -->
+                <div id="print-details" style="display:none;">
+                    <div class="print-details-top">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="print-details-top">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="print-details-bottom">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="print-details-bottom">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="print-details-bottom">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="print-details-bottom">
+                       <div class="port-content">
+                            <div class="port-table">
+                                <div class="port-table-cell">
+                                    <p>Print Ad Sample</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+                <!-- Print Details End -->
+
+                <!-- Portfolio Main -->
+                <div id="port-main">
                     <div id="port-lines">
-                        <svg width="100%" height="100%" id="eventLine" class="clients-doubleLine"></svg>
-                        <svg width="100%" height="100%" id="printLine" class="clients-doubleLine"></svg>
-                        <svg width="100%" height="100%" id="digitalLine" class="clients-doubleLine"></svg>
-                        <svg width="100%" height="100%" id="actLine" class="clients-doubleLine"></svg>
-                        <svg width="100%" height="100%" id="tvLine" class="clients-doubleLine"></svg>
+                        <svg width="100%" height="100%" id="eventLine" ></svg>
+                        <svg width="100%" height="100%" id="printLine" ></svg>
+                        <svg width="100%" height="100%" id="digitalLine" ></svg>
+                        <svg width="100%" height="100%" id="actLine" ></svg>
+                        <svg width="100%" height="100%" id="tvLine" ></svg>
                     </div>
 
-                    <svg width="100%" height="100%" id="sLine" class="clients-doubleLine"></svg>
-                    <svg width="100%" height="100%" id="oneLine" class="clients-doubleLine"></svg>
+                    <svg width="100%" height="100%" id="sLine" ></svg>
+                    <svg width="100%" height="100%" id="oneLine" ></svg>
+
+                <div id="events">
                     <div class="port-circle-events port-bg port-img-events">
                        <div class="port-content">
                             <div class="port-table">
@@ -107,6 +316,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Events Details -->
+                    <div id="event-details" class="invisible">
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                    </div>
+                    <!-- Events Details End-->                    
+                </div> 
+                <div id="print">
                       <div class="port-circle-print port-bg port-img-print">
                           <div class="port-content">
                               <div class="port-table">
@@ -116,6 +335,8 @@
                               </div>
                           </div>
                       </div>
+                </div>  
+                <div id="digital">
                      <div class="port-circle-digital port-bg port-img-digital">
                         <div class="port-content">
                             <div class="port-table">
@@ -125,6 +346,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Digital Details -->
+                     <div id="digital-details" class="invisible">
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                    </div>
+                    <!-- Digital Details End-->                     
+                </div>
+                <div id="activation">                 
                     <div class="port-circle-activation port-bg port-img-activation">
                         <div class="port-content">
                             <div class="port-table">
@@ -134,6 +365,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- activation Details -->
+                    <div id="activation-details" class="invisible">
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                    </div>
+                    <!-- activation Details End-->                     
+                </div>
+                <div id="tv">
                     <div class="port-circle-tv port-bg port-img-tv">
                         <div class="port-content">
                             <div class="port-table">
@@ -142,7 +383,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                      
+                    </div>   
+                    <!-- tv Details -->
+                    <div id="tv-details" class="invisible">
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                        <a href=""><p>https://www.youtube.com/watch?v=79Z5iwEWbIQ</p></a>
+                    </div>
+                    <!-- tv Details End-->                                       
+                </div> 
+                </div>
+                <!-- Portfolio Main End-->   
 
                 </div>  <!-- end port content -->
             </div> <!-- #main -->
