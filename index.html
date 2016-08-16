@@ -27,22 +27,21 @@
                   Index SVG Lines
                    ========================================================================== */    
                 var aLine = Snap("#aLine");
-                aLine.line(0, '15%', '100%', '53%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
                 var cLine = Snap("#cLine");
-                cLine.line(0, '35%', '68%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
                 var pLine = Snap("#pLine");
-                pLine.line(0, '55%', '55%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
                 var wLine = Snap("#wLine");
-                wLine.line(0, '75%', '33%', '23%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
                 var cuLine = Snap("#cuLine");
-                cuLine.line(0, '90%', '28%', '55%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 
-
-                //for responsive purposes
-                var wLine2 = Snap("#wLine2");
-                wLine2.line(0, '75%', '30%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-                var pLine2 = Snap("#pLine2");
-                pLine2.line(0, '50%', '48%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                console.log('width: '+ $(window).width());
+                if ($(window).width() >= 758) { //Media 1
+                    aLine.line(0, '15%', '95%', '48%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                    cLine.line(0, '34%', '68%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                    pLine.line(0, '55%', '55%', '18%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                    wLine.line(0, '75%', '40%', '36%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                    cuLine.line(0, '93%', '32%', '55%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                } else if($(window).width() >= 470 && $(window).width() < 758){
+                    // aLine.line(0, '6%', '100%', '28%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+                }
             }
         </script>
     </head>
@@ -61,7 +60,7 @@
             </aside>
 
             <nav id="bci-menu">
-                <a href="index.html"><div class="menu-circle">home</a></div></a>
+                <a href="index.html"><div class="menu-circle">home</div></a>
                 <a href="about-us.html"><div class="menu-circle">about us</div></a>
                 <a href="clients.html"><div class="menu-circle">clients</div></a>
                 <a href="portfolio.html"><div class="menu-circle">portfolio</div></a>
@@ -74,9 +73,7 @@
                     <svg width="100%" height="100%" id="wLine"></svg>
                     <svg width="100%" height="100%" id="cuLine"></svg>
 
-                    <!-- for responsive purposes -->
-                    <svg width="100%" height="100%" id="wLine2"></svg>
-                    <svg width="100%" height="100%" id="pLine2"></svg>
+                  
                 </div>
                 <div id="art-hand">
                     <img src="img/art-hand.png" />

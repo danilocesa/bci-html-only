@@ -13,7 +13,7 @@ html * { font-family: woodcut !important; }
 .main aside p{ font-size:1.1em; text-align: center; margin-top:10px; line-height: 1em; }
 .main aside img{ height:100px; }
 #bci-menu{ padding:10px; z-index: 1; }
-.menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;;font-size:1.7em;color:#fff;line-height:1.2em;text-align:center;line-height:4em;}
+.menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;;font-size:2em;color:#fff;text-align:center;line-height:3.7em;}
 .menu-circle a, .menu-circle a:visited{ color:#fff; }
 .menu-circle a:hover{ color:#000; }
 .main-content{position: relative;width:60%;left:15%;top:40px;}
@@ -29,23 +29,21 @@ html * { font-family: woodcut !important; }
 #art-hand img{ width:610px; position:relative; }
 #line-art-connection{position: absolute;margin-left: 106px;margin-top: 5px;width: 746px;height: 640px;overflow:hidden;}
 #line-art-connection div{ position:absolute;  width:100%;  height:100%}
-#aLine{ position:absolute; left:-4%; }
+#aLine{ position:absolute; }
 #pLine{ position:absolute; top:0; left:0;}
 #wLine{ position:absolute; top:0; }
 #cuLine{ position:absolute; top:1em; }
-#wLine2{display:none;}
-#pLine2{display:none;}
 /* ==========================================================================
    About Us
 ========================================================================== */
 #img-container-aboutus{ position:absolute;  left:-35%;top:1.5em;}
-.director-content{ width:118%;  font-size:1.1em}
-#img-container-aboutus img{ width:670px;  height:670px;  position:absolute;  left:23%}
-#img-container-aboutus #left, #right{width:45%}
+.director-content{ width:118%;  font-size:1.1em;z-index:3;position:relative;}
+#img-container-aboutus img{ width:580px;  height:580px;  position:absolute;  left:28%;z-index:2;}
+#img-container-aboutus #left, #right{width:40%}
 #img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:240px}
 #img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:170px}
 #img-container-aboutus #left:before, #right:before{ content:"";  width:100%;  height:490px}
-#img-container-aboutus #left:before{ float:right;  shape-outside:ellipse(285px 301px at 109% 22%)}
+#img-container-aboutus #left:before{ float:right;     shape-outside: ellipse(180px 250px at 115% 10%)}
 #img-container-aboutus #right:before{ float:left;  shape-outside:ellipse(305px 334px at 9% 33%)}
 #img-container-aboutus h2{margin: 0; color: #009fde;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
@@ -54,11 +52,11 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
 #img-container-aboutus div#left  .profile-name {margin-left: 15px;}
 #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: 50px;}
-#img-container-aboutus div#left  .profile-name:last-child {margin-left: 140px;}
+#img-container-aboutus div#left  .profile-name:last-child {margin-left: 75px;}
 #img-container-aboutus div#right .profile-name {margin-left: 155px;}
 #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 135px;}
 #img-container-aboutus div#right .profile-name:last-child {margin-left: 50px;}
-@-moz-document url-prefix(){
+/*@-moz-document url-prefix(){
     #img-container-aboutus #left:before,#right:before{content:"";width:0;height:490px}
     #img-container-aboutus div#left  .profile-name {margin-left: -50px;}
     #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: -30px;}
@@ -66,7 +64,7 @@ html * { font-family: woodcut !important; }
     #img-container-aboutus div#right .profile-name {margin-left: 235px;}
     #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 210px;}
     #img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
-}
+}*/
 
 #auLine{z-index:-1;position:absolute;width:45%;height:25%;top:14%;}
 
@@ -462,9 +460,7 @@ html * { font-family: woodcut !important; }
 #art-hand img{width:100%}
 #line-art-connection{width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
 #wLine{display:none;}
-#wLine2{display:block;position:absolute; top:0;height: 35em;}
 #pLine{display:none;}
-#pLine2{display:block; position:absolute; top:0; left:0;}
 
 /* ==========================================================================
    Contact Us
@@ -628,7 +624,6 @@ nav {float: right;width: 38%;}
 #bpiLine1{display:none}
 #scentshopLine3{display:block; position:absolute; left:-15%; top:-95px; z-index:-1; height:120%}
 
-
 }
 
 /* ==========================================================================
@@ -636,12 +631,12 @@ nav {float: right;width: 38%;}
    ========================================================================== */
 @media only screen and (min-width: 1140px) {
 .main aside { float: right;width: 28%; }
-.wrapper { width: 1026px; margin: 0 auto; }
+.wrapper { width: 875px; margin: 0 auto; }
 .main aside img{ width:100%; height:100%; }
-#art-hand{margin-left:230px;margin-top:0;width:615px;position:absolute}
-#art-hand img{ width:605px; }
+#art-hand{margin-left:230px;margin-top:50px;width:500px;position:absolute;height:570px;}
+#art-hand img{ width:490px;height:100%; }
 #bci-menu{ position:absolute; width:122px;}
-#line-art-connection{ width:694px; }
+#line-art-connection{ width:580px; }
 .main-content{position:relative;width:58%;left:17%;top:40px}
 /* ==========================================================================
    Portfolio
@@ -694,7 +689,7 @@ nav {float: right;width: 38%;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-.hidden,.invisible{visibility:hidden;cursor:default;}.hidden{display:none!important}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}
+.hidden,.invisible{visibility:hidden;cursor:default;z-index:1;position:relative;}.hidden{display:none!important}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}
 /* ==========================================================================
    Print styles
    ========================================================================== */
