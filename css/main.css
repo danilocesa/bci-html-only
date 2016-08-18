@@ -13,7 +13,7 @@ html * { font-family: woodcut !important; }
 .main aside p{ font-size:1.1em; text-align: center; margin-top:10px; line-height: 1em; }
 .main aside img{ height:100px; }
 #bci-menu{ padding:10px; z-index: 1; }
-.menu-circle{width:100px;height:100px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:30px;;font-size:2em;color:#fff;text-align:center;line-height:3.7em;}
+.menu-circle{width:90px;height:90px;background:#00B8E8;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;margin-top:25px;;font-size:1.7em;color:#fff;text-align:center;line-height:3.9em;}
 .menu-circle a, .menu-circle a:visited{ color:#fff; }
 .menu-circle a:hover{ color:#000; }
 .main-content{position: relative;width:60%;left:15%;top:40px;}
@@ -27,7 +27,7 @@ html * { font-family: woodcut !important; }
 ========================================================================== */
 #art-hand{ width: 423px; overflow:hidden; }
 #art-hand img{ width:610px; position:relative; }
-#line-art-connection{position: absolute;margin-left: 106px;margin-top: 5px;width: 746px;height: 640px;overflow:hidden;}
+#line-art-connection{position: absolute;margin-left: 80px;margin-top: 5px;width: 746px;height: 640px;overflow:hidden;}
 #line-art-connection div{ position:absolute;  width:100%;  height:100%}
 #aLine{ position:absolute; }
 #pLine{ position:absolute; top:0; left:0;}
@@ -38,17 +38,17 @@ html * { font-family: woodcut !important; }
 ========================================================================== */
 #img-container-aboutus{ position:absolute;  left:-35%;top:1.5em;}
 .director-content{ width:118%;  font-size:1.1em;z-index:3;position:relative;}
-#img-container-aboutus img{ width:580px;  height:580px;  position:absolute;  left:28%;z-index:2;}
+#img-container-aboutus img{ width:600px;  height:580px;  position:absolute;  left:28%;z-index:2;}
 #img-container-aboutus #left, #right{width:40%}
-#img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:240px}
-#img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:170px}
+#img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:180px}
+#img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:110px}
 #img-container-aboutus #left:before, #right:before{ content:"";  width:100%;  height:490px}
-#img-container-aboutus #left:before{ float:right;     shape-outside: ellipse(180px 250px at 115% 10%)}
-#img-container-aboutus #right:before{ float:left;  shape-outside:ellipse(305px 334px at 9% 33%)}
+#img-container-aboutus #left:before{ float:right;     shape-outside: ellipse(183px 265px at 114% 17%)}
+#img-container-aboutus #right:before{ float:left;  shape-outside:ellipse(280px 295px at 9% 37%)}
 #img-container-aboutus h2{margin: 0; color: #009fde;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
 #img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;} 
-#img-container-aboutus .profile-name {margin-bottom: 15px;width: 85%;}
+#img-container-aboutus .profile-name {margin-bottom: 15px;width: 105%;}
 #img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
 #img-container-aboutus div#left  .profile-name {margin-left: 15px;}
 #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: 50px;}
@@ -77,10 +77,10 @@ html * { font-family: woodcut !important; }
 #cu-container #cu-circle-fb{ position:absolute;  width:25%;  left:37%;  top:2%}
 #cu-container #cu-circle-career{ position:absolute;  width:10.5%;  left:67%;  top:135px}
 #cu-container #cu-circle-inquiry{ position:absolute;  width:20%;  left:50%;  top:318px}
-#cu-linkedin-line{position: absolute;left: -35%;top: 80%;z-index: -1;height: 25em;}
-#cu-fb-line{position: absolute;left: -130%;top: 70%;z-index: -1;width: 150%;height: 26em;}
-#cu-career-line{position: absolute;left: -575%;top: 3px;z-index: -1;width: 620%;height: 28em;}
-#cu-inquiry-line{position: absolute;left: -225%;top: 60px;z-index: -1;width: 265%;height:11em;}
+#cu-linkedin-line{position: absolute;left: -35%;top: 80%;z-index: -1;height: 20em;}
+#cu-fb-line{position: absolute;left: -130%;top: 70%;z-index: -1;width: 150%;height: 22em;}
+#cu-career-line{position: absolute;left: -575%;top: -60px;z-index: -1;width: 620%;height: 28em;}
+#cu-inquiry-line{position: absolute;left: -225%;top: 7px;z-index: -1;width: 265%;height:11em;}
 #cu-linkedin-line2{display:none;}
 #cu-career-line2{display:none;}
 #cu-form{ position:absolute;  width:85%;  left:-10%; top:7em; z-index:10; padding:15px 20px; background:white; border: 2px solid rgb(183,183,183); }
@@ -133,7 +133,7 @@ html * { font-family: woodcut !important; }
 .port-img-digital{    background-image:url('../img/portfolio/digital.png')}
 .port-img-activation{    background-image:url('../img/portfolio/activations.png')}
 .port-img-tv{    background-image:url('../img/portfolio/tv.png')}
-#port-lines{ width:100%;  margin-left:-20%;  position:absolute;  min-height:600px}
+#port-lines{ width:100%;  margin-left:-20%;  position:absolute;  min-height:520px}
 #eline-1, #pline-1, #dline-1, #aline-1, #tline-1 {display:block;}
 #eline-2, #pline-2, #dline-2, #aline-2, #tline-2 { display: none; }
 #eline-3, #pline-3, #dline-3, #aline-3, #tline-3 { display: none; }
@@ -178,10 +178,10 @@ html * { font-family: woodcut !important; }
 #clients-container #clients-mitsubishi{position:absolute; width:42%; right:4%; top:145px}
 #panasonicLine1{position: absolute;left:-80%;top: 3px;z-index:-1;}
 #microsoftLine1{position: absolute;left:-180%;width:185%;z-index:-1;}
-#dbpLine1{position: absolute;left:-105%;top:-25px;width:115%;z-index:-1;}
-#mitsubishiLine1{position: absolute;left:-110%;top:45px;width:115%;z-index:-1;}
-#blueLine1{position: absolute;left:-75%;top:-150px;z-index:-1;}
-#bpiLine1{position: absolute;left:-105%;top:-235px;width:300%;height:300%;z-index:-1;}
+#dbpLine1{position: absolute;left:-105%;top:-76px;width:200%;z-index:-1;height:100px;}
+#mitsubishiLine1{position: absolute;left:-110%;top:20px;width:115%;z-index:-1;}
+#blueLine1{position: absolute;left:-75%;top:-190px;z-index:-1;}
+#bpiLine1{position: absolute;left:-105%;top:-283px;width:300%;height:430%;z-index:-1;}
 #clients-menu:after, #clients-menu:after {display: none;}
 .clients-doubleLine-container {display:none;}
 #panasonicLine2{display:none;}
@@ -256,9 +256,9 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus #left:before, #right:before{ content:none;  width:0;  height:0}
 #img-container-aboutus .profile-name{ width:90%}
 #img-container-aboutus div#left .profile-name:last-child{ margin-left:15px}
-#img-container-aboutus div#right .profile-name{ margin-left:15px}
-#img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:15px}
-#img-container-aboutus div#right .profile-name:last-child{ margin-left:15px}
+#img-container-aboutus div#right .profile-name{ margin-left:0}
+#img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:0}
+#img-container-aboutus div#right .profile-name:last-child{ margin-left:0}
 #img-container-aboutus p{ font-size:1em}
 #auLine{display: none;}
 #about-menu:after{ content:"";  display:block;  width:0px;  height:65px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:5px auto;  padding:0px;  z-index:-1}
@@ -409,9 +409,9 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus #left:before, #right:before{ content:none;  width:0;  height:0}
 #img-container-aboutus .profile-name{ width:90%}
 #img-container-aboutus div#left .profile-name:last-child{ margin-left:15px}
-#img-container-aboutus div#right .profile-name{ margin-left:15px}
-#img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:15px}
-#img-container-aboutus div#right .profile-name:last-child{ margin-left:15px}
+#img-container-aboutus div#right .profile-name{ margin-left:0}
+#img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:0}
+#img-container-aboutus div#right .profile-name:last-child{ margin-left:0}
 #img-container-aboutus p{ font-size:1em}
 #auLine{display: none;}
 #about-menu:after{ content:"";  display:block;  width:0px;  height:65px;  border:0;  border-left:2px solid rgb(185,185,185);  margin:-14px auto;  padding:0px;  z-index:-1}
@@ -456,7 +456,7 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Index
 ========================================================================== */
-#art-hand{width:65%;position:absolute;top:50%;left:30%}
+#art-hand{width:65%;position:absolute;top:70%;left:30%}
 #art-hand img{width:100%}
 #line-art-connection{width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
 #wLine{display:none;}
@@ -633,7 +633,7 @@ nav {float: right;width: 38%;}
 .main aside { float: right;width: 28%; }
 .wrapper { width: 875px; margin: 0 auto; }
 .main aside img{ width:100%; height:100%; }
-#art-hand{margin-left:230px;margin-top:50px;width:500px;position:absolute;height:570px;}
+#art-hand{margin-left:230px;margin-top:50px;width:500px;position:absolute;height:530px;}
 #art-hand img{ width:490px;height:100%; }
 #bci-menu{ position:absolute; width:122px;}
 #line-art-connection{ width:580px; }

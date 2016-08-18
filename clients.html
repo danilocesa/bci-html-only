@@ -26,12 +26,12 @@
         window.onload = function() {
             var panasonicLine1 = Snap("#panasonicLine1");
             //panasonicLine1.line(0, '95%', '75%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-            panasonicLine1.line(0, '95%', '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            // panasonicLine1.line(0, '95%', '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var microsoftLine1 = Snap("#microsoftLine1");
-            microsoftLine1.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            // microsoftLine1.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var dbpLine1 = Snap("#dbpLine1");
             //dbpLine1.line(0, 0, '100%', '60%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
-            dbpLine1.line(0, 0, '100%', '65%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            // dbpLine1.line(0, 0, '100%', '65%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var mitsubishiLine1 = Snap("#mitsubishiLine1");
             mitsubishiLine1.line(0, 0, '100%', '30%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var blueLine1 = Snap("#blueLine1");
@@ -63,6 +63,12 @@
             scentshopLine3.line(0, 0, '70%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var panasonicLine3 = Snap("#panasonicLine3");
             panasonicLine3.line(0, '100%', '100%', '40%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+
+            if ($(window).width() >= 758) { //Media 1
+            	panasonicLine1.line(0, '95%', '100%', '50%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            	microsoftLine1.line(0, '56%', '100%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            	dbpLine1.line(0, '10%', '230%', '265%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+            } 	
         }
         </script>
     </head>
