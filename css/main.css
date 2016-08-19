@@ -37,35 +37,17 @@ html * { font-family: woodcut !important; }
    About Us
 ========================================================================== */
 #img-container-aboutus{ position:absolute;  left:-35%;top:1.5em;}
-.director-content{ width:118%;  font-size:1.1em;z-index:3;position:relative;}
+.director-content{ width:140%;  font-size:1.1em;z-index:3;position:relative;}
 #img-container-aboutus img{ width:600px;  height:580px;  position:absolute;  left:28%;z-index:2;}
 #img-container-aboutus #left, #right{width:40%}
-#img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:180px}
-#img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:110px}
+#img-container-aboutus #left{ float:left;  text-align:right;  word-wrap:break-word;  margin-top:200px}
+#img-container-aboutus #right{ float:right;  text-align:left;  word-wrap:break-word;  margin-top:100px}
 #img-container-aboutus #left:before, #right:before{ content:"";  width:100%;  height:490px}
-#img-container-aboutus #left:before{ float:right;     shape-outside: ellipse(183px 265px at 114% 17%)}
-#img-container-aboutus #right:before{ float:left;  shape-outside:ellipse(280px 295px at 9% 37%)}
+#img-container-aboutus #left:before{ float:right;shape-outside: ellipse(308px 288px at 129% 19%)}
+#img-container-aboutus #right:before{ float:left;shape-outside:ellipse(284px 281px at -17% 40%)}
 #img-container-aboutus h2{margin: 0; color: #009fde;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
-#img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;} 
-#img-container-aboutus .profile-name {margin-bottom: 15px;width: 105%;}
-#img-container-aboutus .profile-name:last-child{margin-bottom: 0px;}
-#img-container-aboutus div#left  .profile-name {margin-left: 15px;}
-#img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: 50px;}
-#img-container-aboutus div#left  .profile-name:last-child {margin-left: 75px;}
-#img-container-aboutus div#right .profile-name {margin-left: 155px;}
-#img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 135px;}
-#img-container-aboutus div#right .profile-name:last-child {margin-left: 50px;}
-/*@-moz-document url-prefix(){
-    #img-container-aboutus #left:before,#right:before{content:"";width:0;height:490px}
-    #img-container-aboutus div#left  .profile-name {margin-left: -50px;}
-    #img-container-aboutus div#left  .profile-name:nth-child(4) {margin-left: -30px;}
-    #img-container-aboutus div#left  .profile-name:last-child {margin-left: 30px;}
-    #img-container-aboutus div#right .profile-name {margin-left: 235px;}
-    #img-container-aboutus div#right .profile-name:nth-child(4) {margin-left: 210px;}
-    #img-container-aboutus div#right .profile-name:last-child {margin-left: 155px;}
-}*/
-
+#img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;margin-bottom:12px;}
 #auLine{z-index:-1;position:absolute;width:45%;height:25%;top:14%;}
 
 /* ==========================================================================
@@ -255,7 +237,6 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus #right{ float:none;  text-align:left;  margin-top:13px}
 #img-container-aboutus #left:before, #right:before{ content:none;  width:0;  height:0}
 #img-container-aboutus .profile-name{ width:90%}
-#img-container-aboutus div#left .profile-name:last-child{ margin-left:15px}
 #img-container-aboutus div#right .profile-name{ margin-left:0}
 #img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:0}
 #img-container-aboutus div#right .profile-name:last-child{ margin-left:0}
@@ -408,7 +389,6 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus #right{ float:none;  text-align:left;  margin-top:13px}
 #img-container-aboutus #left:before, #right:before{ content:none;  width:0;  height:0}
 #img-container-aboutus .profile-name{ width:90%}
-#img-container-aboutus div#left .profile-name:last-child{ margin-left:15px}
 #img-container-aboutus div#right .profile-name{ margin-left:0}
 #img-container-aboutus div#right .profile-name:nth-child(4){ margin-left:0}
 #img-container-aboutus div#right .profile-name:last-child{ margin-left:0}
@@ -456,11 +436,14 @@ html * { font-family: woodcut !important; }
 /* ==========================================================================
     Index
 ========================================================================== */
-#art-hand{width:65%;position:absolute;top:70%;left:30%}
+#art-hand{width:65%;position:absolute;top:45%;left:30%}
 #art-hand img{width:100%}
 #line-art-connection{width:77%;height:520px;top:225px;margin-left:83px;margin-top:0;z-index:-1}
 #wLine{display:none;}
 #pLine{display:none;}
+#aLine{display:none;}
+#cLine{display:none;}
+#cuLine{display:none;}
 
 /* ==========================================================================
    Contact Us
@@ -488,7 +471,7 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus{left:-36%}
 #auLine{width:75%;z-index:-1}
 #img-container-aboutus img{width:72%;height:37%;left:35%;position:relative}
-.director-content{width:100%}
+.director-content{width:100%;margin-top:-40px;}
 #img-container-aboutus #left{float:left;text-align:left;margin-top:50px}
 #img-container-aboutus #left:before, #right:before { content:none; }
 #img-container-aboutus #left, #right { width:50%; }
@@ -589,7 +572,7 @@ nav {float: right;width: 38%;}
 #img-container-aboutus { left: -33%; }
 #img-container-aboutus img{width:75%;height:40%;position:relative}
 #img-container-aboutus #left,#right{width:49%}
-.director-content{width:112%;left:10%;position:relative}
+.director-content{width:112%;left:10%;position:relative;margin-top:-40px;}
 #img-container-aboutus #left{float:left;text-align:left;margin-top:50px}
 #img-container-aboutus #left:before, #right:before { content:none; }
 #img-container-aboutus #left, #right { width:50%; }
