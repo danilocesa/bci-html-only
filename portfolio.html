@@ -15,7 +15,12 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/semantic.min.css">
-
+		<script>
+			if(navigator.userAgent.indexOf("Safari")!=-1){
+				console.log("You are using Safari!");
+				document.write('<link rel="stylesheet" type="text/css" href="css/safari.css" />');
+			}
+		</script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
@@ -26,7 +31,8 @@
         <script type="text/javascript">
                         
             $(document).ready(function(){
-
+                $("nav#bci-menu").addClass('port-menu');       
+                $(".main-content").attr('id','port-content');
                 $(".port-circle-print").click(function() {
                     $("#print-details").show();
                     $("#port-lines").hide();
@@ -171,8 +177,8 @@
                         line[func]("invisible");      
 
                     var func2 = main.hasClass('active') ? 'removeClass' : 'addClass';
-                        details.removeClass("invisible");
-                        details[func2]("invisible"); 
+                        details.removeClass("hide");
+                        details[func2]("hide"); 
 
                     if(w > 462 ){
                         if(main.hasClass('active')){ $("#oneLine").addClass("invisible");}else {$("#oneLine").removeClass("invisible");}
@@ -201,8 +207,8 @@
                         if(a != 'tv') {$("#tv").removeClass('hide')[func]("invisible"); }
                         line[func]("invisible");
                     var func2 = main.hasClass('active') ? 'removeClass' : 'addClass';
-                        details.removeClass("invisible");
-                        details[func2]("invisible"); 
+                        details.removeClass("hide");
+                        details[func2]("hide"); 
 
                     var w = $(window).width();
                     if(w > 462 ){
@@ -230,7 +236,7 @@
                 digitalLine.line(0, '75%', '68%', '11%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'dline-1' }); 
                 printLine.line(0, '75%', '95%', '25%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'pline-1' });               
                 oohLine.line(0, '75%', '33%', '58%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'oline-1' });               
-                shopLine.line(0, '75%', '65%', '48%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'sline-1' });               
+                shopLine.line(0, '75%', '65%', '56%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'sline-1' });               
                 actLine.line(0, '75%', '49%', '96%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'aline-1' });
                 tvLine.line(0, '75%', '93%', '81%').attr({ stroke: '#B9B9B9', 'strokeWidth': 1.5}).attr({ id: 'tline-1' });
                 
@@ -280,14 +286,14 @@
                     </p>
                 </aside>
 
-                <nav id="bci-menu" class="port-menu">
+                <nav id="bci-menu">
                     <a href="index.html"><div class="menu-circle" id="home-menu">home</div></a>
                     <a href="about-us.html"><div class="menu-circle invisible" id="about-menu">about us</div></a>
                     <a href="clients.html"><div class="menu-circle invisible">clients</div></a>
                     <a href="portfolio.html"><div class="menu-circle" id="port-menu"><p>portfolio</p></div></a>
                     <a href="contact-us.html"><div class="menu-circle invisible">contact us</div></a>
                 </nav>
-                
+				
                 <div class="main-content" id="port-content">
                      <!-- Print Details -->
                 <div id="print-details" style="display:none;">
@@ -374,7 +380,7 @@
                         </div>
                     </div>
                     <!-- Events Details -->
-                    <div id="event-details" class="invisible">
+                    <div id="event-details" class="hide">
                         <img src="img/portfolio/thumb1.png" alt="" >
                         <img src="img/portfolio/thumb2.png" alt="" >
                         <img src="img/portfolio/thumb3.png" alt="" >
@@ -405,7 +411,7 @@
                         </div>
                     </div>
                     <!-- Digital Details -->
-                     <div id="digital-details" class="invisible">
+                     <div id="digital-details" class="hide">
                         <img src="img/portfolio/thumb1.png" alt="" >
                         <img src="img/portfolio/thumb2.png" alt="" >
                         <img src="img/portfolio/thumb3.png" alt="" >
@@ -447,7 +453,7 @@
                           </div>
                       </div>
                     <!-- tv Ooh -->
-                    <div id="ooh-details" class="invisible">
+                    <div id="ooh-details" class="hide">
                         <img src="img/portfolio/thumb1.png" alt="" >
                         <img src="img/portfolio/thumb2.png" alt="" >
                         <img src="img/portfolio/thumb3.png" alt="" >
@@ -479,7 +485,7 @@
                           </div>
                       </div>
                     <!-- tv Shopper -->
-                    <div id="shopper-details" class="invisible">
+                    <div id="shopper-details" class="hide">
                         <img src="img/portfolio/thumb1.png" alt="" >
                         <img src="img/portfolio/thumb2.png" alt="" >
                         <img src="img/portfolio/thumb3.png" alt="" >
@@ -511,7 +517,7 @@
                         </div>
                     </div>
                     <!-- activation Details -->
-                    <div id="activation-details" class="invisible">
+                    <div id="activation-details" class="hide">
                         <img src="img/portfolio/thumb1.png" alt="" >
                         <img src="img/portfolio/thumb2.png" alt="" >
                         <img src="img/portfolio/thumb3.png" alt="" >

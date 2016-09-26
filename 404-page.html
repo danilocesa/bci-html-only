@@ -15,7 +15,12 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/semantic.min.css">
-
+        <script>
+            if(navigator.userAgent.indexOf("Safari")!=-1){
+                console.log("You are using Safari!");
+                document.write('<link rel="stylesheet" type="text/css" href="css/safari.css" />');
+            }
+        </script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
@@ -35,10 +40,19 @@
                     tel# 6389478
                 </p>
             </aside>
-                <div id="art-hand">
-                    <div id="not-circle"><h1>404</h1><p>error</p></div>
-                    <img src="img/art-hand.png" id="not-img"/>
+            <div id="art-content">
+                <div class="art-hand art-bg art-img">
+                  <div class="port-content">
+                      <div class="port-table">
+                          <div class="port-table-cell">
+                            <div class="art-circle art-bg">
+                                <h1>404</h1><p>error</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>                    
                 </div>
+            </div>               
         </div> <!-- #main -->
     </div> <!-- #main-container -->
     </body>

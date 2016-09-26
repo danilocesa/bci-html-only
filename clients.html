@@ -15,7 +15,16 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/semantic.min.css">
-
+		<script>
+			//if(navigator.userAgent.indexOf("Chrome") != -1){
+				//console.log("You are using Chrome!");
+			//}
+			//else 
+			if(navigator.userAgent.indexOf("Safari")!=-1){
+				console.log("You are using Safari!");
+				document.write('<link rel="stylesheet" type="text/css" href="css/safari.css" />');
+			}
+		</script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/semantic.min.js"></script>
@@ -44,6 +53,8 @@
             ucpbLine1.line(0, '100%', '100%', '15%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			var metrobankLine1 = Snap("#metrobankLine1");
             metrobankLine1.line(0, 0, '100%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
+			var ritemedLine1 = Snap("#ritemedLine1");
+            ritemedLine1.line('30%', 0, '50%', '100%').attr({ stroke: '#B9B9B9', 'strokeWidth': 2});
 			
 			/*For Responsive purposes*/
 			var leftLine = Snap("#leftLine");
@@ -90,9 +101,13 @@
 					$('.clients-doubleLine-container').toggleClass('current-line');
                 });
             });
-        </script>
+        
+		
+		</script>
 		<style>
+		/*#clients-container #clients-panasonic:not(*:root) { height:146px; }*/
 		</style>
+		
     </head>
     <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -152,6 +167,7 @@
 							<a href="#"><img src="img/clients/scentshop.png" alt="ScentShop" class="clients-img"/></a>
 						</div>
 						<div class="clients-img-container"  id="clients-ritemed">
+							<svg width="100%" height="100%" id="ritemedLine1" class="clients-line"></svg>
 							<a href="#"><img src="img/clients/ritemed.png" alt="Ritemed" class="clients-img"/></a>
 						</div>
 						<div class="clients-img-container" id="clients-bpi">

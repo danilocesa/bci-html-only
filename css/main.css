@@ -46,8 +46,8 @@ html * { font-family: woodcut !important; }
 #img-container-aboutus #left:before, #right:before{ content:"";  width:100%;  /*height:490px*/}
 /*#img-container-aboutus #left:before{ float:right;shape-outside: ellipse(308px 288px at 129% 19%)}
 #img-container-aboutus #right:before{ float:left;shape-outside:ellipse(284px 281px at -17% 40%)}*/
-#img-container-aboutus #left:before{ float:right;shape-outside: ellipse(260px 260px at 128% 19%); height: 350px;}
-#img-container-aboutus #right:before{ float:left;shape-outside: ellipse(260px 260px at -17% 35%); height: 455px;}
+#img-container-aboutus #left:before{ float:right;shape-outside: ellipse(260px 260px at 133% 20%); height: 350px;}
+#img-container-aboutus #right:before{ float:left;shape-outside: ellipse(260px 260px at -15% 35%); height: 455px;}
 #img-container-aboutus h2{margin: 0; color: #009fde; font-size: 1.6rem;}
 #img-container-aboutus h2.ui.header .sub.header{font-size: 0.9em; color: #464646;} 
 #img-container-aboutus p{font-size: 0.9em; color: #808080;line-height: 1;margin-bottom:12px;}
@@ -112,11 +112,11 @@ html * { font-family: woodcut !important; }
 .port-circle-print p{    color:white;     font-size:5vw;     position:absolute;     left:8px;     top:23%}
 .port-circle-ooh{    float:left;     position:relative;     width:24%;     padding-bottom:24%;    margin: -2% 0% 0 2%;     overflow:hidden}
 .port-circle-ooh p{    color:white;     font-size:3.6vw;     position:absolute;     bottom:0px;     left:22%;}
-.port-circle-shopper{    float:left;     position:relative;     width:31%;     padding-bottom:31%;     margin:-14% 0% 5% 4%;     overflow:hidden}
+.port-circle-shopper{    float:left;     position:relative;     width:31%;     padding-bottom:31%;     margin:-7% 0% 5% 4%;     overflow:hidden}
 .port-circle-shopper p{    color:white;     font-size:2.2vw;     position:absolute;     bottom:18%;     left:40%;     right:10%; text-shadow: 1px 1px gray;}
 .port-circle-activation{    float:left;     position:relative;     width:34%;     padding-bottom:34%;     margin:4% 0 0 10%;     overflow:hidden}
 .port-circle-activation p{    color:white;     font-size:3.5vw;     position:absolute;     bottom:15%;     left:0;     right:0}
-.port-circle-tv{    float:left;     position:relative;     width:52%;     padding-bottom:52%;     margin:-15% 0px 0px 4%;     overflow:hidden}
+.port-circle-tv{    float:left;     position:relative;     width:48%;     padding-bottom:48%;     margin:-10% 0px 0px 8%;     overflow:hidden}
 .port-circle-tv p{    color:white;     font-size:15vw}
 .port-content{    position:absolute;     height:100%;     width:100%;     padding:10%}
 .port-table{    display:table;     width:100%;     height:100%}
@@ -152,7 +152,7 @@ html * { font-family: woodcut !important; }
 #digital-details img {width:20%; height:18%; margin-bottom: 1px;}
 #ooh-details {width: 100%;position: absolute;margin: 27% 0% 0px 32%;}
 #ooh-details img {width:20%; height:18%; margin-bottom: 1px;}
-#shopper-details {width: 100%;position: absolute;margin: 65% 0% 0px 3%;}
+#shopper-details {width: 100%;position: absolute;margin: 70% 0% 0px 5%;}
 #shopper-details img {width:20%; height:18%; margin-bottom: 1px;}
 #activation-details {width: 100%;position: absolute;margin: 10% 0% 0px 2%;}
 #activation-details img {width:20%; height:18%; margin-bottom: 1px;}
@@ -174,7 +174,7 @@ html * { font-family: woodcut !important; }
 #clients-container #clients-forex{position:absolute; width:9%; left:18%; top:150px}
 #clients-container #clients-dbp{position:absolute; width:9%; left:20%; top:250px}
 #clients-container #clients-scentshop{position:absolute; width:14%; left:9%; top:320px}
-#clients-container #clients-ritemed{position:absolute; width:14%; left:0%; top:450px}
+#clients-container #clients-ritemed{position:absolute; width:14%; left:2%; top:450px}
 #clients-container #clients-bpi{position:absolute; width:10%; left:19%; top:425px}
 #clients-container #clients-blue{position:absolute; width:26%; left:30%; top:300px}
 #clients-container #clients-accenture{position:absolute; width:14%; left:30%; top:180px}
@@ -192,6 +192,7 @@ html * { font-family: woodcut !important; }
 #accentureLine1{position:absolute; left:-155%; top:10%; width:170%; z-index:-1}
 #ucpbLine1{position:absolute; left:-585%; top:42%; width:610%; height:160%; z-index:-1}
 #metrobankLine1{position: absolute;left:-355%;top:-125%; width:400%; height:180%; z-index:-1;}
+#ritemedLine1{position: absolute;left: 0%;top: -130%;z-index: -1;height: 150%;}
 #clients-menu:after, #clients-menu:after {display: none;}
 .clients-doubleLine-container {display:none;}
 #panasonicLine2{display:none;}
@@ -215,6 +216,17 @@ html * { font-family: woodcut !important; }
 #cv-bpi {left: 110%; top: 0;}
 #cv-panasonic {width: 200%;}
 
+/* ==========================================================================
+   404 Page
+========================================================================== */
+#art-content {width: 100%;height: 600px;}
+.art-hand{    float:left;     position:relative;     width:58%;     padding-bottom:58%; overflow:hidden;  left: 50%; transform: translateX(-50%);top: 10%;}
+.art-bg{    background-position:center center;     background-repeat:no-repeat;     background-size:contain;     color:#fff;}
+.art-img{    background-image:url('../img/art-hand.png')}
+.art-circle {width:45%;height:45%;background-image:url('../img/404-circle.png');-moz-border-radius:50px;-webkit-border-radius:105px;border-radius:105px;position: absolute;left: 56%;transform: translateX(-50%);}
+.art-bg{    background-position:center center;     background-repeat:no-repeat;     background-size:contain;     color:#fff;}
+.art-circle h1{ color:transparent;     font-size:8.2vw;     position:absolute;         top: 50%;    transform: translateY(-50%);    left: 12%;}
+.art-circle p{color:transparent;     font-size:4vw;     position:absolute;         top: 50%;    transform: translateY(-30%);    left: 62%;}
 
 /* ==========================================================================
    Media Queries
@@ -336,8 +348,8 @@ html * { font-family: woodcut !important; }
 .clients-img-container:last-child:after{display:none}
 .clients-img-container:last-child{padding-bottom:10px;}
 #clients-ucpb:after{display:none}
-#clients-microsoft:after{display:none}
-#clients-mitsubishi:before{content:""; display:block; width:0px; height:15px; border:0; border-left:2px solid rgb(185,185,185); margin:0 auto; padding:0px}
+/*#clients-microsoft:after{display:none}
+#clients-mitsubishi:before{content:""; display:block; width:0px; height:15px; border:0; border-left:2px solid rgb(185,185,185); margin:0 auto; padding:0px}*/
 #clients-menu:before{content:""; display:block; width:105px; border-bottom:2px solid rgb(185,185,185); -webkit-transform:translateY(98px)translateX(-45px)rotate(135deg); position:absolute; z-index:-1;}
 #clients-menu:after{content:""; display:block; width:105px; border-bottom:2px solid rgb(185,185,185); -webkit-transform:translateY(65px)translateX(30px)rotate(45deg); position:absolute; top:16em;  z-index:-1}
 
@@ -348,6 +360,11 @@ html * { font-family: woodcut !important; }
 .cv-container {width:150% !important; left:-15% !important; top: 110% !important; padding-bottom:10px;}
 .current-menu:after{display:none !important}
 .current-menu:before{display:none !important}
+/* ==========================================================================
+   404
+========================================================================== */
+#art-content {height: 410px;}
+.art-hand {width: 100%;    padding-bottom: 100%;}
 }
 
 /* ==========================================================================
@@ -372,7 +389,11 @@ html * { font-family: woodcut !important; }
 #art-hand img{width:100%}
 #line-art-connection{display:none}
 #bci-fbpage{display:none}
-
+/* ==========================================================================
+   404
+========================================================================== */
+#art-content {height: 410px;}
+.art-hand {width: 100%;    padding-bottom: 100%;}
 /* ==========================================================================
     Portfolio
 ========================================================================== */
@@ -472,8 +493,8 @@ html * { font-family: woodcut !important; }
 .clients-img-container:last-child:after{display:none;}
 .clients-img-container:last-child{padding-bottom:10px;}
 #clients-ucpb:after{display:none}
-#clients-microsoft:after{display:none}
-#clients-mitsubishi:before{content:""; display:block; width:0px; height:15px; border:0; border-left:2px solid rgb(185,185,185); margin:0 auto; padding:0px}
+/*#clients-microsoft:after{display:none}
+#clients-mitsubishi:before{content:""; display:block; width:0px; height:15px; border:0; border-left:2px solid rgb(185,185,185); margin:0 auto; padding:0px}*/
 .clients-doubleLine-container {display:block;width:100%;}
 #leftLine{position: absolute;left: 15%;top:-8%;z-index:-1;width:50%;}
 #rightLine{position: absolute;right: -2%;top:-8%;z-index:-1;width:50%;}
@@ -527,7 +548,7 @@ html * { font-family: woodcut !important; }
 #cu-container #cu-circle-inquiry{ top:200%;  left:60%}
 
 #cu-linkedin-line{display:none;}
-#cu-linkedin-line2{position: absolute;z-index: -1;height: 23em;left: -75%;top: 50%;display:block;}
+#cu-linkedin-line2{position: absolute;z-index: -1;height: 22em;left: -75%;top: 50%;display:block;}
 #cu-fb-line {top: 50%;left: -135%;height: 22.5em;}
 #cu-career-line{display:none;}
 #cu-career-line2{position: absolute;left: -495%;top: 0%;z-index: -1;width: 550%;height: 20em;display:block;}
@@ -570,7 +591,7 @@ html * { font-family: woodcut !important; }
    Portfolio
 ========================================================================== */
 .port-menu div:not(#home-menu):not(#port-menu) { display:none;}
-#port-menu{ width:100px;  height:100px;  position:relative;  margin:20% auto}
+#port-menu{ width:80px;  height:80px;  position:relative;}
 #port-menu p{ position:relative;  top:50%;  transform:translateY(-50%)}
 #port-lines{ display:none}
 .port-circle-events{ float:none;  width:50%;  padding-bottom:50%;  margin:0 auto 10%}
@@ -602,7 +623,7 @@ html * { font-family: woodcut !important; }
 ========================================================================== */
 #clients-container {top:8em;}
 #clients-container #clients-panasonic{left:20%;}
-#clients-container #clients-ritemed {top: 400px;}
+#clients-container #clients-ritemed {top: 298px;left:-4.5%}
 #clients-container #clients-bpi {top: 340px;left: 20%;}
 #clients-container #clients-metrobank {right: 25%;}
 #clients-container #clients-dbp{top:180px}
@@ -630,10 +651,17 @@ html * { font-family: woodcut !important; }
 #metrobankLine1 {width: 480%; height: 305%;}
 #bpiLine1{display:none;}
 #bpiLine2{display:block; position: absolute; z-index:-1;}
+#ritemedLine1{height: 205%; top: -200%; left: 2%;}
 #cv-metrobank {left:-45%; top:110%;}
 #cv-blue {left:0%; top:110%;}
 #cv-bpi {width:450%;}
 #cv-panasonic {width:250%;}
+
+/* ==========================================================================
+   404
+========================================================================== */
+#art-content {height: 410px;}
+.art-hand {width: 65%;    padding-bottom: 65%;}
 
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {   
@@ -737,6 +765,7 @@ nav {float: right;width: 38%;}
 #clients-container #clients-mitsubishi {top:13em; width:31%;}
 #clients-container #clients-metrobank {top:30em; width:13%;}
 #clients-container #clients-scentshop {top:27em;}
+#clients-container #clients-ritemed {top:35.5em;left:1%;}
 #clients-container #clients-accenture {width:13%;}
 #clients-container #clients-blue {width:22%; top: 22em;}
 #clients-container #clients-dbp {top:19em;}
@@ -758,6 +787,7 @@ nav {float: right;width: 38%;}
 #clients-container #clients-accenture {top:14em;}
 #clients-container #clients-microsoft {top: 7em;}
 #clients-container #clients-ucpb {top: 7em;}
+#ritemedLine1 {height:220%; top:-215%;}
 }
 @media only screen and (min-width: 1026px) and (max-width: 1139px) {
 #clients-container #clients-panasonic {top: 1em;}
@@ -766,6 +796,7 @@ nav {float: right;width: 38%;}
 #clients-container #clients-microsoft {top: 5em;}
 #clients-container #clients-ucpb {top: 5em;}
 #accentureLine1 {left:-180%; width:190%;}
+#ritemedLine1 {height:200%; top:-165%;}
 }/*
 @media only screen and (min-width: 960px) and (max-width: 1089px) {
 #img-container-aboutus img{left:36%;}
@@ -784,7 +815,7 @@ nav {float: right;width: 38%;}
    ========================================================================== */
 @media only screen and (min-width: 1140px) {
 .main aside { float: right;width: 28%; }
-.wrapper { width: 875px; margin: 0 auto; }
+.wrapper { width: 835px; margin: 0 auto; }
 .main aside img{ width:100%; height:100%; }
 #art-hand{margin-left:230px;margin-top:50px;width:500px;position:absolute;height:530px;}
 #art-hand img{ width:490px;height:100%; }
